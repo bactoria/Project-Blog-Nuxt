@@ -1,0 +1,23 @@
+{
+  "name": "myBlog-Nuxt",
+  "version": "1.0.0",
+  "description": "My beautiful Nuxt.js project",
+  "author": "bactoria",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^1.0.0",
+    "vuetify": "^0.17.3",
+    "@nuxtjs/axios": "^5.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.0.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1"
+  }
+}
