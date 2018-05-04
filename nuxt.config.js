@@ -53,7 +53,13 @@ module.exports = {
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
   },
-
+  /*proxy: true
+  },
+  proxy: {
+    '/api/' : 'http://localhost:8080',
+    'getCategory' : { target: 'http://localhost:8080', pathRewrite: { '^/api/': '/api/category'}}
+  },
+*/
   /*
   ** Build configuration
   */
@@ -62,7 +68,7 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-      
+
       if (ctx.isServer) {
         config.externals = [
           nodeExternals({
