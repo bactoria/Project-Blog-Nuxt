@@ -1,61 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f3014d4-b5f6-4f10-a2fd-093e00811b3e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/myBlog-Nuxt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/myBlog-Nuxt.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/main_top.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Category.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Category.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Logo.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/VuetifyLogo.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/default_default.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/search.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myBlogTest/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myBlogTest/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myBlogTest/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myBlogTest/assets/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myBlogTest/components/Logo.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myBlogTest/components/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myBlogTest/layouts/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myBlogTest/layouts/default.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myBlogTest/middleware/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myBlogTest/nuxt.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myBlogTest/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myBlogTest/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myBlogTest/pages/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myBlogTest/pages/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myBlogTest/plugins/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myBlogTest/static/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myBlogTest/static/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myBlogTest/store/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/pages/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/category/_id.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/category/_id.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/inspire.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/post.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/vuetify.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/vuetify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/v.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/store/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/store/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="1f3014d4-b5f6-4f10-a2fd-093e00811b3e" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -155,8 +101,8 @@
       <file leaf-file-name="_id.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/post/_id.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="170">
+              <caret line="95" column="15" lean-forward="true" selection-end-line="171" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -292,10 +238,11 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-9" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-132" />
+    <option name="y" value="40" />
+    <option name="width" value="979" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -429,12 +376,12 @@
       <workItem from="1526288277490" duration="1550000" />
       <workItem from="1526312281063" duration="17296000" />
       <workItem from="1526448840789" duration="708000" />
-      <workItem from="1526449689966" duration="2185000" />
+      <workItem from="1526449689966" duration="2507000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="215621000" />
+    <option name="totallyTimeSpent" value="215943000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="782" height="831" extended-state="0" />
@@ -818,8 +765,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/post/_id.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="170">
+          <caret line="95" column="15" lean-forward="true" selection-end-line="171" />
           <folding>
             <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
