@@ -1,33 +1,39 @@
 <template>
+<div align="center" class="root">
+
+    <img src="/image/index.PNG" width="100%"/>
 <div>
-  asd
-  <div>
-    <
-
-  </div>
-  <v-form @submit.prevent="submit">
-    <input v-model="search" autofocus />
+  <router-link to="/">asdasd</router-link>
+  <nuxt-link to="/">asdasd</nuxt-link>
 
 
-  </v-form>
 
+</div>
 </div>
 
 </template>
 
 <script>
 
-  export default {
-    data () {
-      return{
-        search: ''
-      }
-    },
-    methods: {
-      submit () {
-
-        this.$router.push('category/'+this.search);
-      }
-    }
-  }
 </script>
+
+<style lang="scss" scoped>
+
+  .root {
+    margin-top: 2%;
+    margin-left: 11%;
+    margin-right: 13%;
+
+  img {
+    border-radius: 8px;
+  }
+
+
+
+
+  }
+
+
+
+
+</style>

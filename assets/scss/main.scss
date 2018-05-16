@@ -1,0 +1,32 @@
+html, body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+@font-face {
+  font-family: 'GodoM';
+  src: url('/assets/fonts/GodoM.woff') format('woff');
+}
+
+
+.GodoM {
+  font-family: GodoM;
+}
+
+.GodoB {
+  font-family: GodoM;
+  font-stretch: expanded;
+}
+
+
+
+a {
+  text-decoration: none;
+  border: 1px solid red;
+}
+
+div {
+  border: 1px solid;
+}
