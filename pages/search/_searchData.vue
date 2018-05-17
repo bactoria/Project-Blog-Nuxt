@@ -8,7 +8,9 @@
 -->
 
   <div class="root">
-    <div class="searchResult GodoB">
+    {{searchedPosts}}
+
+    <!--<div class="searchResult GodoB">
       <span style="font-size: 20px;">'{{searchData}}'</span> 에 대한 검색결과 {{searchedPostsLen}} 건
     </div>
     <v-card class="card" v-for="post in searchedPosts" :key="post[0]">
@@ -20,7 +22,7 @@
            {{post[3]}}
          </div>
        </a>
-     </v-card>
+     </v-card>-->
   </div>
 
 </template>
@@ -32,23 +34,10 @@ import axios from 'axios'
     middleware: 'search',
     data () {
       return {
-        searchData: this.$route.params.searchData,
-        searchedPosts: '',
-        searchedPostsLen: ''
-
+        searchedPosts: this.$store.state.categories
       }
     },
     created () {
-      this.search ()
-    },
-    methods: {
-      search() {
-        axios.get('http://127.0.0.1:8080/api/search/' + this.searchData)
-          .then((res) => {
-            this.searchedPosts = res.data
-            this.searchedPostsLen = this.searchedPosts.length
-          });
-      },
     }
   }
 </script>

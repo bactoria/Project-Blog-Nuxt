@@ -3,10 +3,6 @@
 
     <img src="/image/index.PNG" width="100%"/>
 <div>
-  <router-link to="/">asdasd</router-link>
-  <nuxt-link to="/">asdasd</nuxt-link>
-
-
 
 </div>
 </div>
@@ -14,7 +10,8 @@
 </template>
 
 <script>
-
+  export default {
+  }
 </script>
 
 <style lang="scss" scoped>
