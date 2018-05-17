@@ -8,9 +8,8 @@
 -->
 
   <div class="root">
-    {{searchedPosts}}
 
-    <!--<div class="searchResult GodoB">
+    <div class="searchResult GodoB">
       <span style="font-size: 20px;">'{{searchData}}'</span> 에 대한 검색결과 {{searchedPostsLen}} 건
     </div>
     <v-card class="card" v-for="post in searchedPosts" :key="post[0]">
@@ -22,22 +21,24 @@
            {{post[3]}}
          </div>
        </a>
-     </v-card>-->
+     </v-card>
   </div>
 
 </template>
 
 <script>
-import axios from 'axios'
-
   export default {
     middleware: 'search',
     data () {
       return {
-        searchedPosts: this.$store.state.categories
+        searchedPosts: this.$store.state.searchedPosts,
+        searchData: this.$route.params.searchData,
+        searchedPostsLen: ''
+        //searchedPosts2: this.searchedPosts <- 이거는 '' 로 나옴... 왜지..
       }
     },
     created () {
+      this.searchedPostsLen= this.searchedPosts.length
     }
   }
 </script>
