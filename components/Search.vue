@@ -1,5 +1,7 @@
 <template>
-  <div align="center">
+  <div class="GodoM">
+
+    <div align="center" class="hidden-sm-and-down">
     <v-text-field placeholder="Search..."
                   append-icon="search"
                   @keyup.enter.native="search"
@@ -8,7 +10,21 @@
                   color="black"
                   style="width: 170px;">
     </v-text-field>
+    </div>
+      <div align="center" class="  hidden-md-and-up">
+        <v-text-field placeholder="Search..."
+                      append-icon="search"
+                      @keyup.enter.native="search"
+                      :append-icon-cb="search"
+                      v-model="searchData"
+                      color="white"
+                      dark
+                      style="width: 150px; color: white;">
+        </v-text-field>
+      </div>
+
   </div>
+
 </template>
 
 <script>
@@ -20,8 +36,7 @@
       },
       methods : {
         search () {
-          alert("Searched");
-          this.$router.push('/');
+          this.$router.push('/search/'+ this.searchData);
         }
       }
     }

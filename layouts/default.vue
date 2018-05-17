@@ -14,8 +14,8 @@
       <v-toolbar-title >
         <a href="https://bactoria.me" class="GodoB" tag="span" style="cursor: pointer; color: #ffffff; text-decoration: none">Bactoria</a>
       </v-toolbar-title>
-      <v-toolbar-items >
-      </v-toolbar-items>
+      <v-spacer></v-spacer>
+        <search />
     </v-toolbar>
 
 
@@ -59,6 +59,7 @@ import Category from '~/components/Category'
 import AboutMe from '~/components/AboutMe'
 import LeftMenu from "../components/LeftMenu";
 import SideMenu from "../components/SideMenu";
+import Search from "../components/Search"
 
   export default {
     data () {
@@ -74,8 +75,10 @@ import SideMenu from "../components/SideMenu";
     },
     components: {
       LeftMenu,
-      Category, AboutMe,
-      SideMenu
+      Category,
+      AboutMe,
+      SideMenu,
+      Search
     }
   }
 </script>

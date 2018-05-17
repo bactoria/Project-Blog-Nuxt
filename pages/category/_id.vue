@@ -1,15 +1,19 @@
 <template>
 <div class="root" align="center">
-
+<!-- post
+[0] : id
+[1] : categoryId
+[2] : title
+[3] : createdDate
+-->
   <section style="height: 20px;"> </section>
-
-  <v-card class="card" v-for="post in posts" :key="post.id">
-    <a class="none_" :href="'/post/'+post.id">
+  <v-card class="card" v-for="post in posts" :key="post[0]">
+    <a class="none_" :href="'/post/'+post[0]">
       <div class="GodoB title">
-        {{post.title}}
+        {{post[2]}}
       </div >
       <div align="right" class= "GodoM" style="padding-right: 10px;">
-        {{post.createdDate.split('T')[0]}}
+        {{post[3]}}
        </div>
      </a>
   </v-card>
@@ -27,7 +31,7 @@
     middleware: 'posts',
     components: {VueMarkdown},
     computed: {
-      posts () { return this.$store.state.posts.content}
+      posts () { return this.$store.state.posts.content},
     },
     methods: {
       getPost (id) {
@@ -40,8 +44,8 @@
 <style lang="scss" scoped>
 
   .root {
-    margin-left:10%;
-    margin-right:10%;
+    margin-left:7%;
+    margin-right:7%;
   }
 
   .card {

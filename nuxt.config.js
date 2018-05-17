@@ -89,6 +89,7 @@ module.exports = {
         compress: false
       },
       cache: '/path/to/cache/dir'
-    }
+    },
+    vendor: [ 'babel-polyfill', 'eventsource-polyfill' ]
   }
 }

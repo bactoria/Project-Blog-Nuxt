@@ -5,8 +5,10 @@ const store = () => new Vuex.Store({
   state: {
     posts: [],
     categories: [],
+    hasCategories: false,
     post: [],
-    csr: []
+    csr: [],
+    searchData: []
   },
   mutations: {
     add (state, payload) {
@@ -20,8 +22,13 @@ const store = () => new Vuex.Store({
     },
     addCSR (state, payload) {
       state.csr = payload;
+    },
+    addSearchData (state, payload) {
+      state.searchData = payload;
+    },
+    changeHasCategories(state) {
+      state.hasCategories = true
     }
-
   },
 
   getters: {
