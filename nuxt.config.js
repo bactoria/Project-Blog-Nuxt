@@ -46,27 +46,29 @@ module.exports = {
   plugins: [
     '@/plugins/vuetify'
   ],
-
   /*
   ** Nuxt.js modules
   */
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    // With options
+    '@nuxtjs/proxy'
   ],
+  proxy: {
+    // Simple proxy
+    '/api' : {
+      target : 'http://127.0.0.1:8080',
+      changeOrigin: true,
+      logLevel : 'debug'
+    }
+  },
   /*
   ** Axios module configuration
   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
   },
-  /*proxy: true
-  },
-  proxy: {
-    '/api/' : 'http://localhost:8080',
-    'getCategory' : { target: 'http://localhost:8080', pathRewrite: { '^/api/': '/api/category'}}
-  },
-*/
   /*
   ** Build configuration
   */
