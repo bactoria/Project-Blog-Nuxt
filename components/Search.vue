@@ -8,7 +8,7 @@
                   :append-icon-cb="search"
                   v-model="searchData"
                   color="black"
-                  style="width: 170px;">
+                  style="width: 130px;">
     </v-text-field>
     </div>
       <div align="center" class="  hidden-md-and-up">
@@ -36,7 +36,7 @@
       },
       methods : {
         search () {
-          this.$router.push('/search/'+ this.searchData);
+          window.location.href = '/search/'+this.searchData
         }
       }
     }
