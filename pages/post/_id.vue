@@ -6,10 +6,12 @@
 
       <!-- 카테고리 -->
       <div align="center">
-        <a :href="'/category/'+post.categoryId">{{post.categoryId}}</a>
+        <a class = "GodoB" style= "font-size: 1.3rem; text-decoration: none; color: #999999;" :href="'/category/'+post.category.id">{{post.category.name}}</a>
       </div>
 
-      <a href="http://bactoria.com/bar.html#disqus_thread">Link</a>
+
+      <!--<a href="#disqus_thread"></a>-->
+
       <div align="center">
       <!-- 제목 -->
         <span class="GodoB PostTitle">{{post.title}}</span>
@@ -130,7 +132,7 @@
   }
 
   .PostTitle {
-    font-size: 55px;
+    font-size: 4rem;
   }
   .PostDate {
     float: right;
