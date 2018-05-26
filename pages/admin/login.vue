@@ -18,7 +18,7 @@
 </template>
 
 <script>
-  import {mapGetters} from 'Vuex'
+  import {mapGetters} from 'vuex'
 
   //var promise = require('es6-promise').Promise; 아래와 같음..?
   import {Promise} from 'es6-promise';
