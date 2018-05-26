@@ -5,6 +5,14 @@
  * @author ocodia
  */
 
+/*Custom Markdown*/
+
+img {
+  max-width: 70%;
+}
+
+/*------------Code Block-------------------------------*/
+
 code[class*="language-"],
 pre[class*="language-"] {
   color: #f8f8f2;

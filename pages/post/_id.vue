@@ -142,11 +142,14 @@
 
 
   .markdown {
-
+    max-width: 100%;
     font-size: 1.5rem;
     text-align: left;
 
-    line-height: 3rem;
+    //text가 div 벗어나는거 방지
+    word-wrap: break-word;
+
+    line-height: 2.5rem;
 
     padding-left: 3%;
     padding-right: 3%;
