@@ -47,7 +47,6 @@
         bbb() {
           return new Promise( function (resolve, reject) {
             FB.api('/me',function (response) {
-            console.log(1);
               resolve(response);
             });
           });
