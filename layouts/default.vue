@@ -17,7 +17,6 @@
       <v-spacer></v-spacer>
         <search />
     </v-toolbar>
-    <admin-toolbar/>
     <!-- <v-progress-linear :indeterminate="true"></v-progress-linear>-->
     <main app>
       <v-content>
@@ -49,6 +48,7 @@
 
     </main>
 
+    <admin-toolbar/>
   </v-app>
 </template>
 
