@@ -7,8 +7,42 @@
 
 /*Custom Markdown*/
 
-img {
+p img {
   max-width: 70%;
+  height: 10px;
+}
+
+h1 {
+  line-height: 2.5em;
+  margin-bottom: 0.5em;
+  font-size: 2.5em;
+}
+
+h2 {
+  line-height: 2em;
+  margin-bottom: 0.5em;
+  font-size: 2em;
+}
+
+h3 {
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+}
+
+h4 {
+  margin-bottom: 0.5em;
+}
+
+/* list css에 안맞음 */
+ol,ul {
+  margin-left:1.2em;
+  margin-top:0.5em;
+  margin-bottom:0.5em
+}
+
+li {
+  line-height: 1.5em;
 }
 
 /*------------Code Block-------------------------------*/
@@ -26,8 +60,6 @@ pre[class*="language-"] {
   word-wrap: normal;
   line-height: 1.5;
   letter-spacing: 0.1em;
-  font-size: 0.9em;
-  box-shadow: none;
   -moz-tab-size: 4;
   -o-tab-size: 4;
   tab-size: 4;
@@ -36,6 +68,13 @@ pre[class*="language-"] {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
+
+  /* custom */
+
+  font-size: 0.8em;
+  box-shadow: none;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 /* Code blocks */

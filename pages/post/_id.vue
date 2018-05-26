@@ -131,7 +131,7 @@
   }
 
   .PostTitle {
-    font-size: 4rem;
+    font-size: 3em;
   }
   .PostDate {
     float: right;
@@ -143,16 +143,16 @@
 
   .markdown {
     max-width: 100%;
-    font-size: 1.5rem;
+    font-size: 1.3em;
     text-align: left;
 
     //text가 div 벗어나는거 방지
     word-wrap: break-word;
 
-    line-height: 2.5rem;
+    line-height: 1.3em;
 
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
 
     margin-top: 10%;
     margin-bottom: 15%;
