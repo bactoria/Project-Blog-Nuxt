@@ -1,6 +1,6 @@
 import Vuex from 'vuex'
 
-const store = () => new Vuex.Store({
+const store = () => new Vuex.Store ({
 
   state: {
     posts: [],
@@ -8,7 +8,9 @@ const store = () => new Vuex.Store({
     hasCategories: false,
     post: [],
     csr: [],
-    searchedPosts: []
+    searchedPosts: [],
+    authenticated: false,
+    counter: 0
   },
   mutations: {
     add (state, payload) {
@@ -28,6 +30,9 @@ const store = () => new Vuex.Store({
     },
     changeHasCategories(state) {
       state.hasCategories = true
+    },
+    authentify(state) {
+      state.authenticated = true
     }
   },
 
@@ -37,7 +42,11 @@ const store = () => new Vuex.Store({
     },
     post (state) {
       return state.post
+    },
+    authentiti (status) {
+      return status.authenticated
     }
+
   }
 })
 

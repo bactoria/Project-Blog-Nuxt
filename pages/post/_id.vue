@@ -31,7 +31,6 @@
 
     <article>
       <!-- 내용 -->
-      <!--<a href="bactoria.me#disqus_thread">d</a>-->
 
       <vue-markdown style="text-align: left;" class="GodoM markdown" :watches="['show','html','breaks','linkify','emoji','typographer','toc']"
                     :source="post.content" :show="show" :html="html" :breaks="breaks" :linkify="linkify"
@@ -56,11 +55,10 @@
 
 
     <!-- Facebook 댓글 --> <!--Docs- https://developers.facebook.com/docs/plugins/comments/-->
-
+      <a href="#disqus_thread"></a>
     <!-- <div id="fb-root"></div>
          <div class="fb-comments" data-href="http://localhost:3000" data-width="100%" data-numposts="5"></div>
     -->
-
 
     <!-- Disqus 댓글 -->
     <div id="disqus_thread"></div>
@@ -99,6 +97,7 @@
         {src: 'https://bactoria.disqus.com/count.js', id: 'dsq-count-scr', body: true},
         {src: '/js/main.js'},
         {src: '/js/prism.js'},
+        {src: '/js/facebookSDK.js'}
       ],
       link: [
         { rel: 'stylesheet', href: '/css/main.css' },

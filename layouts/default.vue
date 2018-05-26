@@ -17,8 +17,7 @@
       <v-spacer></v-spacer>
         <search />
     </v-toolbar>
-
-
+    <admin-toolbar/>
     <!-- <v-progress-linear :indeterminate="true"></v-progress-linear>-->
     <main app>
       <v-content>
@@ -50,7 +49,6 @@
 
     </main>
 
-
   </v-app>
 </template>
 
@@ -60,6 +58,7 @@ import AboutMe from '~/components/AboutMe'
 import LeftMenu from "../components/LeftMenu";
 import SideMenu from "../components/SideMenu";
 import Search from "../components/Search"
+import AdminToolbar from "../components/adminToolbar";
 
   export default {
     data () {
@@ -70,10 +69,10 @@ import Search from "../components/Search"
         iid: '4',
         unchecked: 'qwe',
         itsreal: 'real'
-
       }
     },
     components: {
+      AdminToolbar,
       LeftMenu,
       Category,
       AboutMe,
