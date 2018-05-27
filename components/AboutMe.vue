@@ -39,7 +39,7 @@
   }
 
   .myName {
-    font-size: 60px;
+    font-size: 4em;
     cursor: pointer;
     color: black;
     text-decoration: none;

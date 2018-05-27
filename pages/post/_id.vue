@@ -1,12 +1,12 @@
 <template>
 
-  <div style="width: 100%;" class="root">
+  <div class="root">
 
     <div class="table" align="center">
 
       <!-- 카테고리 -->
       <div align="center">
-        <a class = "GodoB" style= "font-size: 1.3rem; text-decoration: none; color: #999999;" :href="'/category/'+post.category.id">{{post.category.name}}</a>
+        <a class = "GodoB" style= "font-size: 1.3em; text-decoration: none; color: #999999;" :href="'/category/'+post.category.id">{{post.category.name}}</a>
       </div>
 
 
@@ -17,8 +17,7 @@
         <span class="GodoB PostTitle">{{post.title}}</span>
 
 
-        <!-- 제목 밑 선긋기 -->
-        <div style="border-bottom: 7px solid #dddddd;border-radius: 2px; width: 10%; margin-top: 20px"> </div>
+        <div style="border-bottom: 0.6em solid #dddddd;border-radius: 2px; width: 10%; margin-top: 3em"> </div>
 
         <div class="PostDate"> {{post.createdDate.split("T")[0]}} </div>
 
@@ -101,7 +100,8 @@
       ],
       link: [
         { rel: 'stylesheet', href: '/css/main.css' },
-        { rel: 'stylesheet', href: '/css/prism.css' }
+        { rel: 'stylesheet', href: '/css/prism.css' },
+        { rel: 'stylesheet', href: '/css/responsive.scss', lang:'scss' }
       ]
     },
     data () {
@@ -125,18 +125,21 @@
   </script>
 
 <style lang="scss" scoped>
+
   .root {
-    padding-left: 5%;
-    padding-right: 7%;
+    margin-left : 5%;
+    margin-right : 5%;
+    max-width: 100%;
   }
 
   .PostTitle {
-    font-size: 3em;
+    font-size: 2em;
   }
+
   .PostDate {
     float: right;
-    margin-right: 15px;
-    font-size: 15px;
+    margin-right: 1em;
+    font-size: 1.2em;
     font-family: GodoM;
   }
 
@@ -171,5 +174,45 @@
   #disqust_thread {
     margin-top: 20px;
   }
+
+  $breakpoints: (
+    'xs': (max-width: 768px),
+    'sm': (max-width: 992px),
+    'md': (max-width: 1200px)
+  ) !default;
+
+
+  /* responsive scss */
+
+  @mixin respond-to($breakpoint) {
+    // If the key exists in the map
+    @if map-has-key($breakpoints, $breakpoint) {
+      // Prints a media query based on the value
+      @media #{inspect(map-get($breakpoints, $breakpoint))} {
+        @content;
+      }
+    }
+      // If the key doesn't exist in the map
+    @else {
+      @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+    }
+  }
+
+  .root {
+
+    @include respond-to('md') {
+      font-size: 1em;
+    }
+    @include respond-to('sm') {
+      font-size: 0.9em;
+    }
+    @include respond-to('xs') {
+      font-size: 0.7em;
+    }
+  }
+
+
+
 
 </style>

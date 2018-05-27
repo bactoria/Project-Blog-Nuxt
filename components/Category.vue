@@ -40,7 +40,7 @@
 <style lang="scss" scoped>
 
   .category {
-    font-size: 32px;
+    font-size: 2.3em;
     text-align: center;
     margin-top: 20px;
   }
@@ -53,7 +53,7 @@
     }
 
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1.5em;
     text-align: center;
     cursor:pointer;
     color: #aaaaaa;
