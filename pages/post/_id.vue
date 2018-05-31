@@ -18,7 +18,7 @@
         <div class="GodoB PostTitle">{{post.title}}</div>
 
 
-        <div style="border-bottom: 0.6em solid #dddddd;border-radius: 2px; width: 10%; margin-top: 2em"></div>
+        <div style="border-bottom: 0.1em solid #dddddd;border-radius: 2px; width: 100%;"></div>
 
         <span class="PostDate"> {{post.createdDate.split("T")[0]}} </span>
 
@@ -134,13 +134,19 @@
 <style lang="scss" scoped>
 
   .root {
+
+    margin-top: 3%;
     margin-left: 5%;
     margin-right: 5%;
     max-width: 100%;
   }
 
   .PostTitle {
-    font-size: 2em;
+    font-size: 2.3em;
+
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+
   }
 
   .PostDate {
@@ -165,16 +171,6 @@
 
     margin-top: 10%;
     margin-bottom: 15%;
-  }
-
-  .table {
-    background-image: url("/static/image/backboard.jpg");
-    background-repeat: repeat;
-
-    border-radius: 20px;
-    margin-top: 20px;
-    padding-top: 40px;
-    padding-bottom: 20px;
   }
 
   #disqust_thread {
