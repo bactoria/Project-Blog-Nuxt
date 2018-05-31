@@ -51,7 +51,7 @@
       middleware: 'admin',
       methods: {
         search () {
-          axios.get('http://bactoria.me:8080/admin/post/'+this.searchPost)
+          axios.get('http://bactoria.me:8080/api/posts/'+this.searchPost)
             .then((res) => {
               this.title = res.data.title
               this.content = res.data.content
@@ -66,7 +66,7 @@
             content: this.content,
             category: this.category
           }
-          axios.post('http://bactoria.me:8080/admin/modify/post/'+this.postId,post)
+          axios.post('http://bactoria.me:8080/api/posts/'+this.postId,post)
             .then( () => {
             alert('수정완료')
           })
@@ -76,7 +76,7 @@
           this.dialog = false;
           if(this.postId != ''){
             alert('삭제요청')
-            axios.delete('http://bactoria.me:8080/admin/delete/post/'+this.postId)
+            axios.delete('http://bactoria.me:8080/api/posts/'+this.postId)
               .then( () => {
                 alert('삭제완료')
               })

@@ -43,7 +43,7 @@
           category: this.category
         }
 
-        axios.post('http://127.0.0.1:8080/admin/newPost', post)
+        axios.post('http://127.0.0.1:8080/api/posts', post)
           .then((res) => {
             alert("전송완료");
           });
