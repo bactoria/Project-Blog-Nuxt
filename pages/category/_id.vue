@@ -13,7 +13,7 @@
         {{post[2]}}
       </div >
       <div align="right" class= "GodoM" style="padding-right: 10px;">
-        {{post[3]}}
+        {{post[3].split("T")[0]}}
        </div>
      </a>
   </v-card>
