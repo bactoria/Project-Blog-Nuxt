@@ -88,7 +88,7 @@
       },
 
       search() {
-        axios.get('http://localhost:8080/api/posts/' + this.searchPost)
+        axios.get('http://bactoria.me:8080/api/posts/' + this.searchPost)
           .then((res) => {
             this.title = res.data.title
             this.content = res.data.content
