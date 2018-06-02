@@ -115,7 +115,7 @@
         this.dialog = false;
         if (this.postId != '') {
           alert('삭제요청')
-          axios.delete('http://localhost:8080/api/posts/' + this.postId, {headers: {"Authorization": this.tokenStr}}
+          axios.delete('http://bactoria.me:8080/api/posts/' + this.postId, {headers: {"Authorization": this.tokenStr}}
           )
             .then(() => {
               alert('삭제완료')
