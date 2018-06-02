@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-btn color="primary" dark @click.native.stop="dialog = true">Open Auth Dialog</v-btn>
+    <v-btn color="primary" dark @click.native.stop="dialogAuth = true">Open Auth Dialog</v-btn>
 
     <v-dialog v-model="dialogAuth" max-width="500">
       <v-card>
