@@ -10,7 +10,8 @@ const store = () => new Vuex.Store ({
     csr: [],
     searchedPosts: [],
     authenticated: false,
-    counter: 0
+    counter: 0,
+    tokenStr: ''
   },
   mutations: {
     add (state, payload) {
@@ -45,6 +46,9 @@ const store = () => new Vuex.Store ({
     },
     authentiti (status) {
       return status.authenticated
+    },
+    tokenStr (status) {
+      return status.tokenStr
     }
 
   }
