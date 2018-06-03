@@ -49,6 +49,11 @@
     </main>
 
     <admin-toolbar/>
+
+    <v-footer class="pa-3">
+      <v-spacer></v-spacer>
+      <div>&copy; {{ new Date().getFullYear() }}</div>
+    </v-footer>
   </v-app>
 </template>
 
@@ -87,6 +92,10 @@ import AdminToolbar from "../components/adminToolbar";
 
   .blank {
     padding-top: 40px;
+  }
+
+  .pa-3 {
+    margin-top : 10%
   }
 
 </style>

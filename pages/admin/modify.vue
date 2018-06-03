@@ -104,7 +104,7 @@
           category: this.category
         };
 
-        axios.put('http://bactoria.me/api/posts/' + this.postId, put, {headers: {"Authorization": this.tokenStr}}
+        axios.put('http://bactoria.me:8080/api/posts/' + this.postId, put, {headers: {"Authorization": this.tokenStr}}
         )
           .then(() => {
             alert('수정완료')
