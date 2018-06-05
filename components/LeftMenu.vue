@@ -1,9 +1,9 @@
 <template>
   <div class="root" align="center">
     <about-me/>
+    <category/>
     <search/>
     <link-icon />
-    <category/>
   </div>
 </template>
 
