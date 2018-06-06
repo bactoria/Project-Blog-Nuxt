@@ -1,19 +1,19 @@
 <template>
-<div align="center" >
+<div align="center" style="margin-bottom: 1.5em;">
 
   <div class="category GodoB">CATEGORY</div>
   <div>
-  <v-list align="center" style="margin-left: 0px;">
-   <v-list-tile v-for="category in categories" :key="category.id">
-      <v-list-tile-content class="GodoB" style="align-items: center;">
-        <a class="categoryA"  :href="'/category/' + category.id">
+    <v-list align="center" style="margin-left: 0px;">
+      <v-list-tile v-for="category in categories" :key="category.id">
+        <v-list-tile-content class="GodoB" style="align-items: center;">
+          <a class="categoryA"  :href="'/category/' + category.id">
           {{category.name}}
-        </a>
+          </a>
 
-      </v-list-tile-content>
-    </v-list-tile>
-  </v-list>
-</div>
+        </v-list-tile-content>
+      </v-list-tile>
+    </v-list>
+  </div>
 
 </div>
 
@@ -38,6 +38,8 @@
 </script>
 
 <style lang="scss" scoped>
+
+
 
   .category {
     font-size: 2.3em;
