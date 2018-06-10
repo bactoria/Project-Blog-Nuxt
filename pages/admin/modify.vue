@@ -114,7 +114,6 @@
       deletePost() {
         this.dialog = false;
         if (this.postId != '') {
-          alert('삭제요청')
           axios.delete('http://bactoria.me:8080/api/posts/' + this.postId, {headers: {"Authorization": this.tokenStr}}
           )
             .then(() => {
