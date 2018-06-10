@@ -1,16 +1,19 @@
 <template>
-<div align="center" class="root">
-
-    <img src="/image/index.PNG" width="100%"/>
-<div>
-
-</div>
-</div>
+  <div align="center" class="root">
+    <div>
+      <span class="GodoB" style="font-size: 3em;">전체 글</span>
+      <post-list />
+    </div>
+  </div>
 
 </template>
 
 <script>
+  import PostList from "../components/PostList";
   export default {
+    components: {PostList},
+    middleware: 'allPosts'
+
   }
 </script>
 
@@ -21,16 +24,11 @@
     margin-left: 11%;
     margin-right: 13%;
 
-  img {
-    border-radius: 8px;
-  }
-
-
-
+    img {
+      border-radius: 8px;
+    }
 
   }
-
-
 
 
 </style>
