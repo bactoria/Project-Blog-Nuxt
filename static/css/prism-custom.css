@@ -1,0 +1,52 @@
+
+/*s3 이미지 크기 조정*/
+p img {
+  max-width: 70%;
+
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+h1 {
+  line-height: 2.5em;
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+  font-size: 2.5em;
+}
+
+h2 {
+  line-height: 2em;
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+  font-size: 2em;
+}
+
+h3 {
+  line-height: 1.5em;
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+  font-size: 1.5em;
+}
+
+h4 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* list css에 안맞음 */
+ol,ul {
+  margin-left:1.2em;
+  margin-top:0.5em;
+  margin-bottom:0.5em
+}
+
+li {
+  line-height: 1.5em;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+  box-shadow: none;
+
+  margin-top: 1em;
+}
