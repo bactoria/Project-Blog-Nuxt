@@ -7,7 +7,7 @@ export default function ( {params, store} ) {
   //escape 로도 안됬었음... 휴..
   //스프링부트에는 알아서 디코딩 된다.. 왜지?
 
-  return axios.get('http://bactoria.me:8080/api/search/' + encodeURI(params.searchData))
+  return axios.get('http://bactoria.me:8080/api/posts/search/' + encodeURI(params.searchData))
         .then((res) => {
           store.commit('addSearchedPosts',res.data)
         });
