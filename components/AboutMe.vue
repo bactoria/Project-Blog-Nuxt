@@ -5,8 +5,8 @@
 <!--     <div style="font-size: 25px">개발 블로그</div>-->
    </div>
    <div class="hidden-md-and-up GodoB myName2">Bactoria</div>
-   <img src="/image/me2.jpg" width="200px" class="hidden-sm-and-down"/>
-   <img src="/image/me2.jpg" width="130px" class="hidden-md-and-up "/>
+   <img src="/image/me3.jpg" width="200px" class="hidden-sm-and-down"/>
+   <img src="/image/me3.jpg" width="130px" class="hidden-md-and-up "/>
 
 
    <!--<div class="aboutMe" @click="aboutMe"> ABOUT ME </div> <br/>-->
@@ -53,7 +53,7 @@
   .myName2 {
     font-size: 30px;
     margin-top: 50px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
   }
 
   .asdasd {
