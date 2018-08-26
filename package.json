@@ -22,7 +22,8 @@
     "npm": "^6.1.0",
     "nuxt": "^1.0.0",
     "vue-markdown": "^2.2.4",
-    "vuetify": "^0.17.3"
+    "vuetify": "^0.17.3",
+    "tui-editor": "^1.2.6"
   },
   "devDependencies": {
     "cross-env": "^5.0.1",

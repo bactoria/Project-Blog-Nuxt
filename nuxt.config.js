@@ -36,7 +36,13 @@ module.exports = {
   */
   css: [
     'vuetify/src/stylus/main.styl',
-    '@/assets/scss/main.scss'
+    '@/assets/scss/main.scss',
+
+    /*for tui-editor*/
+    'codemirror/lib/codemirror.css',
+    'tui-editor/dist/tui-editor.css',
+    'tui-editor/dist/tui-editor-contents.css',
+    'highlight.js/styles/github.css'
   ],
 
   /*
@@ -87,6 +93,6 @@ module.exports = {
       },
       cache: '/path/to/cache/dir'
     },
-    vendor: [ 'babel-polyfill', 'eventsource-polyfill' ]
+    vendor: [ 'babel-polyfill', 'eventsource-polyfill', 'tui-editor' ]
   }
 }
