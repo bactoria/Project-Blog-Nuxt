@@ -46,7 +46,10 @@ module.exports = {
     'tui-editor/dist/tui-editor-contents.css',
     'highlight.js/styles/github.css'
   ],
-
+  env: {
+    baseURL: process.env.BASE_URL || 'http://bactoria.me:8080'
+/*    baseURL: (process.env.NODE_ENV === 'production' ? 'http://bactoria.me:8080' : 'http://bactoria.me:8080')*/
+  },
   /*
   ** Plugins to load before mounting the App
   */

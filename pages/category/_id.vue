@@ -10,13 +10,13 @@
 
 <script>
   import PostList from "../../components/PostList";
-  import axios from 'axios';
+  import axios from '~/plugins/axios';
 
   export default {
     middleware: 'posts',
     components: {PostList},
-    asyncData ({params}) {
-      return axios.get('http://bactoria.me:8080/api/categories/'+params.id)
+    asyncData ({params, env}) {
+      return axios.get('/api/categories/'+params.id)
         .then ((res) => {
           return {categoryName : res.data.name}
         });

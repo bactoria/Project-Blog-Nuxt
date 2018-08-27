@@ -1,8 +1,8 @@
-import axios from 'axios';
+import axios from '~/plugins/axios';
 
 export default function ( {params, store} ) {
 
-  return axios.get('http://bactoria.me:8080/api/csr')
+  return axios.get('/api/csr')
     .then ((res) => {
       store.commit('addCSR', res.data)
     });

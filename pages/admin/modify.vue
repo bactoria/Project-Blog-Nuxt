@@ -56,7 +56,7 @@
 </template>
 
 <script>
-  import axios from 'axios'
+  import axios from '~/plugins/axios'
   import Input from "vuetify/es5/mixins/input";
   import {mapGetters} from 'vuex'
 
@@ -88,7 +88,7 @@
       },
 
       search() {
-        axios.get('http://bactoria.me:8080/api/posts/' + this.searchPost)
+        axios.get('/api/posts/' + this.searchPost)
           .then((res) => {
             this.title = res.data.title
             this.content = res.data.content
@@ -104,7 +104,7 @@
           category: this.category
         };
 
-        axios.put('http://bactoria.me:8080/api/posts/' + this.postId, put, {headers: {"Authorization": this.tokenStr}}
+        axios.put('/api/posts/' + this.postId, put, {headers: {"Authorization": this.tokenStr}}
         )
           .then(() => {
             alert('수정완료')
@@ -114,7 +114,7 @@
       deletePost() {
         this.dialog = false;
         if (this.postId != '') {
-          axios.delete('http://bactoria.me:8080/api/posts/' + this.postId, {headers: {"Authorization": this.tokenStr}}
+          axios.delete('/api/posts/' + this.postId, {headers: {"Authorization": this.tokenStr}}
           )
             .then(() => {
               alert('삭제완료')

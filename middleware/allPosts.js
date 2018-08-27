@@ -1,8 +1,8 @@
-import axios from 'axios';
+import axios from '~/plugins/axios';
 
 export default function ( {store} ) {
 
-  return axios.get('http://bactoria.me:8080/api/posts')
+  return axios.get('/api/posts')
   .then ((res) => {
     store.commit('add', res.data)
   });

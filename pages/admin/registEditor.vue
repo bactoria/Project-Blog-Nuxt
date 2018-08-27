@@ -53,7 +53,7 @@
 
 <script>
   import {mapGetters} from 'vuex'
-  import axios from 'axios'
+  import axios from '~/plugins/axios'
   import TuiEditor from '../../components/TuiEditor'
 
   var Base64 = {
@@ -190,7 +190,7 @@
         console.log(tokenStr)
         console.log(this.$store.state.tokenStr)
 
-        axios.post('http://bactoria.me:8080/api/posts', post, {headers: {"Authorization": tokenStr}}
+        axios.post('/api/posts', post, {headers: {"Authorization": tokenStr}}
         )
           .then((res) => {
             alert("전송완료");
