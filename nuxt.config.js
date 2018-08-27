@@ -23,9 +23,11 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }
     ]
   },
+
   router: {
     middleware: 'category'
   },
+
   /*
   ** Customize the progress-bar color
   */
@@ -51,6 +53,7 @@ module.exports = {
   plugins: [
     '@/plugins/vuetify'
   ],
+
   /*
   ** Nuxt.js modules
   */
@@ -60,6 +63,7 @@ module.exports = {
     // With options
     '@nuxtjs/proxy'
   ],
+
   proxy: {
     // Simple proxy
 
@@ -70,6 +74,7 @@ module.exports = {
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
   },
+
   /*
   ** Build configuration
   */
@@ -95,4 +100,5 @@ module.exports = {
     },
     vendor: [ 'babel-polyfill', 'eventsource-polyfill', 'tui-editor' ]
   }
+
 }
