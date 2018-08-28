@@ -7,7 +7,6 @@
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    /*"prestart": "nuxt build", 리눅스 재부팅시 메모리 다잡아먹음..*/
     "start": "nuxt start",
     "generate": "nuxt generate"
   },
