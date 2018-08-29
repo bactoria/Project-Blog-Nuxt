@@ -7,7 +7,9 @@ p img {
   margin-bottom: 2em;
 }
 
-h1 {
+/* 해시태그(#) 사이즈 조정 */
+
+  h1 {
   line-height: 2.5em;
   margin-top: 0.7em;
   margin-bottom: 0.7em;
@@ -49,4 +51,5 @@ pre[class*="language-"] {
   box-shadow: none;
 
   margin-top: 1em;
+  margin-bottom: 2em;
 }
