@@ -190,7 +190,7 @@
         console.log(tokenStr)
         console.log(this.$store.state.tokenStr)
 
-        axios.post('/api/posts', post, {headers: {"Authorization": tokenStr}}
+        axios.post('/posts', post, {headers: {"Authorization": tokenStr}}
         )
           .then((res) => {
             alert("전송완료");

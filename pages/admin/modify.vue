@@ -88,7 +88,7 @@
       },
 
       search() {
-        axios.get('/api/posts/' + this.searchPost)
+        axios.get('/posts/' + this.searchPost)
           .then((res) => {
             this.title = res.data.title
             this.content = res.data.content
@@ -104,7 +104,7 @@
           category: this.category
         };
 
-        axios.put('/api/posts/' + this.postId, put, {headers: {"Authorization": this.tokenStr}}
+        axios.put('/posts/' + this.postId, put, {headers: {"Authorization": this.tokenStr}}
         )
           .then(() => {
             alert('수정완료')
@@ -114,7 +114,7 @@
       deletePost() {
         this.dialog = false;
         if (this.postId != '') {
-          axios.delete('/api/posts/' + this.postId, {headers: {"Authorization": this.tokenStr}}
+          axios.delete('/posts/' + this.postId, {headers: {"Authorization": this.tokenStr}}
           )
             .then(() => {
               alert('삭제완료')

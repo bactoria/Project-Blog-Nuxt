@@ -16,7 +16,7 @@
     middleware: 'posts',
     components: {PostList},
     asyncData ({params, env}) {
-      return axios.get('/api/categories/'+params.id)
+      return axios.get('/categories/'+params.id)
         .then ((res) => {
           return {categoryName : res.data.name}
         });

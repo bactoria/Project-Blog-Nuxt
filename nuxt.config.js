@@ -47,7 +47,7 @@ module.exports = {
     'highlight.js/styles/github.css'
   ],
   env: {
-    baseURL: process.env.BASE_URL || 'http://bactoria.me:8080'
+    baseURL: process.env.BASE_URL || 'https://bactoria.me/api'
 /*    baseURL: (process.env.NODE_ENV === 'production' ? 'http://bactoria.me:8080' : 'http://bactoria.me:8080')*/
   },
   /*
