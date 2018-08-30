@@ -1,8 +1,5 @@
-/*
-PrismJS
-https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript+c+bash+cpp+git+http+java+json+nginx+sql+properties+scss+python+scala+yaml&plugins=line-highlight+line-numbers+toolbar+jsonp-highlight+highlight-keywords+command-line+show-language+copy-to-clipboard
-*/
-
+/* PrismJS 1.15.0
+https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript+c+bash+cpp+git+http+java+json+nginx+sql+properties+scss+python+scala+yaml+vim&plugins=line-highlight+line-numbers+toolbar+jsonp-highlight+highlight-keywords+command-line+data-uri-highlight+copy-to-clipboard */
 /**
  * okaidia theme for JavaScript, CSS and HTML
  * Loosely based on Monokai textmate theme by http://www.monokai.nl/
@@ -258,7 +255,7 @@ div.code-toolbar > .toolbar button {
 div.code-toolbar > .toolbar a,
 div.code-toolbar > .toolbar button,
 div.code-toolbar > .toolbar span {
-	color: #bbb;
+	color: #999;
 	font-size: .8em;
 	padding: 0 .5em;
 	background: #f5f2f0;
