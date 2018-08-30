@@ -1,7 +1,7 @@
 <template>
   <div class="GodoB">
 
-  <v-toolbar dark app>  <!--v-if="this.$store.state.authenticated"-->
+  <v-toolbar dark app v-if="this.$store.state.authenticated">
 
     <v-spacer></v-spacer>
     <v-toolbar-title dark style="color: white;">
