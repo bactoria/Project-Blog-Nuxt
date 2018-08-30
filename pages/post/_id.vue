@@ -159,7 +159,8 @@
 
   .PostDate {
     float: right;
-    margin-right: 1em;
+
+    margin: 1em 1em 0em 0em;
     font-size: 1.2em;
     font-family: GodoM;
   }
@@ -177,7 +178,7 @@
     padding-left: 1%;
     padding-right: 1%;
 
-    margin-top: 10%;
+    margin-top: 7em;
     margin-bottom: 15%;
   }
 
