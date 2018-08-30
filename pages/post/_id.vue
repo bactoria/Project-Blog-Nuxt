@@ -6,7 +6,7 @@
 
       <!-- 카테고리 -->
       <div align="center">
-        <a class="GodoB" style="font-size: 1.3em; text-decoration: none; color: #2ac1bc;"
+        <a class="GodoB" style="font-size: 1.5em; text-decoration: none; color: #2ac1bc;"
            :href="'/category/'+post.category.id">{{post.category.name}}</a>
       </div>
 
