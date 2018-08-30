@@ -53,3 +53,43 @@ pre[class*="language-"] {
   margin-top: 1em;
   margin-bottom: 2em;
 }
+
+/*code-toolbar */
+
+div.code-toolbar > .toolbar {
+
+  position: absolute;
+  right: 0em;
+  left: 0em;
+  top: 0em;
+
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
+
+}
+
+div.code-toolbar:hover > .toolbar {
+  opacity: 0.9; /* 0.9 로 해버려서 밑에 copy의 색깔들에 0.1정도의 검정색 필터를 가져버림. 색조합 다시 짤때 이거 1로 바꾸고 하자*/
+}
+
+
+/* copy hover color*/
+
+div.code-toolbar > .toolbar a:hover,
+div.code-toolbar > .toolbar a:focus {
+  color: red;
+}
+
+
+/* copy
+
+  color : font color
+  background : button color
+*/
+
+div.code-toolbar > .toolbar a,
+div.code-toolbar > .toolbar button,
+div.code-toolbar > .toolbar span {
+  color: #999;
+  background: #DDD;
+}
