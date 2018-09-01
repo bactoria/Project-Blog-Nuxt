@@ -1,57 +1,31 @@
+/* https://github.com/github1586/nuxt-bnhcp/blob/master/store/index.js
+*  Quick Start Vue.js p490. B.3 저장소 기능 작성
+*
+* */
+
 import Vuex from 'vuex'
+import getters from './getters.js'
+import mutations from './mutations.js'
 
-const store = () => new Vuex.Store ({
+const state = {
+  posts: [],
+  categories: [],
+  hasCategories: false,
+  post: [],
+  csr: [],
+  searchedPosts: [],
+  authenticated: false,
+  counter: 0,
+  tokenStr: '',
+  markContent: 'markContent'
+}
 
-  state: {
-    posts: [],
-    categories: [],
-    hasCategories: false,
-    post: [],
-    csr: [],
-    searchedPosts: [],
-    authenticated: false,
-    counter: 0,
-    tokenStr: ''
-  },
-  mutations: {
-    add (state, payload) {
-      state.posts = payload;
-    },
-    addCategories (state, payload) {
-      state.categories = payload;
-    },
-    addPost (state, payload) {
-      state.post = payload;
-    },
-    addCSR (state, payload) {
-      state.csr = payload;
-    },
-    addSearchedPosts (state, payload) {
-      state.searchedPosts = payload;
-    },
-    changeHasCategories(state) {
-      state.hasCategories = true
-    },
-    authentify(state) {
-      state.authenticated = true
-    }
-  },
-
-  getters: {
-    categories (state) {
-      return state.categories
-    },
-    post (state) {
-      return state.post
-    },
-    authentiti (status) {
-      return status.authenticated
-    },
-    tokenStr (status) {
-      return status.tokenStr
-    }
-
-  }
-})
+const store = () => {
+  return new Vuex.Store({
+    state,
+    getters,
+    mutations
+  })
+}
 
 export default store

@@ -1,10 +1,11 @@
 import axios from '~/plugins/axios';
+import {POST} from "../store/mutation-types";
 
 export default function ( {params, store} ) {
 
   return axios.get('/posts/'+params.id)
     .then ((res) => {
-      store.commit('addPost', res.data)
+      store.commit(POST, res.data)
     });
 
 }
