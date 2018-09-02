@@ -9,6 +9,6 @@ export default function ( {params, store} ) {
 
   return axios.get('/posts/search/' + encodeURI(params.searchData))
         .then((res) => {
-          store.commit('addSearchedPosts',res.data)
+          store.commit(SEARCH_POSTS,res.data)
         });
 }
