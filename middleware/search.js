@@ -1,4 +1,5 @@
 import axios from '~/plugins/axios';
+import {SEARCH_POSTS} from "../store/mutation-types";
 
 export default function ( {params, store} ) {
 
