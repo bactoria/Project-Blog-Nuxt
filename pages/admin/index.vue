@@ -18,32 +18,18 @@
 </template>
 
 <script>
-  import {mapGetters} from 'vuex'
+  import {AUTHENTIFY} from "~/store/mutation-types";
 
   //var promise = require('es6-promise').Promise; 아래와 같음..?
   import {Promise} from 'es6-promise';
 
     export default {
-      data() {
-        return {
-          asd: 'asdgh'
-        }
-      },
       head: {
         script: [
           {src: "/js/facebookSDK.js"}
         ]
       },
-      computed: mapGetters(['authentiti']),
       methods: {
-        aaa() {
-          FB.getLoginStatus(function (response) {
-            if (response.status === 'connected') {
-              console.log(response.authResponse.accessToken);
-            }
-          });
-        },
-
         bbb() {
           return new Promise( function (resolve, reject) {
             FB.api('/me',function (response) {
@@ -55,7 +41,7 @@
         ccc() {
           this.bbb().then( (data) => {
             if (data.id == '1514492868680482') {
-              this.$store.commit('authentify')
+              this.$store.commit(AUTHENTIFY)
             }
           });
         }
