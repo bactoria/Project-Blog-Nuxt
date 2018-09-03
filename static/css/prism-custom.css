@@ -1,10 +1,16 @@
-
 /*s3 이미지 크기 조정*/
 p img {
   max-width: 70%;
 
   margin-top: 2em;
   margin-bottom: 2em;
+}
+
+/* markdown의 ``의 css*/
+p code {
+  line-height: 1.1;
+  color: #666666;
+  font-family: GodoM;
 }
 
 /* 해시태그(#) 사이즈 조정 */
