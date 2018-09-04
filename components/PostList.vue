@@ -6,6 +6,7 @@
     [2] : title
     [3] : createdDate
     -->
+
     <v-card class="card" v-for="post in posts" :key="post[0]">
       <a class="none_" :href="'/post/'+post[0]">
         <div class="GodoB title">
@@ -22,17 +23,19 @@
 </template>
 
 <script>
+  import {mapGetters} from 'vuex'
+
   export default {
-    computed: {
-      posts() {
-        return this.$store.state.posts.content
-      },
-    },
+    computed: mapGetters({
+      posts : 'posts'
+    })
+
+    /*, ...?
     methods: {
       getPost(id) {
         this.$router.push('/post/' + id);
       }
-    }
+    }*/
 
   }
 </script>
