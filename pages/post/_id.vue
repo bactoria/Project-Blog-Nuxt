@@ -144,6 +144,7 @@
     margin-left: 5%;
     margin-right: 5%;
     max-width: 100%;
+
   }
 
   .PostTitle {
@@ -166,17 +167,18 @@
     max-width: 100%;
     font-size: 1.3em;
     text-align: left;
+    line-height: 2.5em;
 
     //text가 div 벗어나는거 방지
     word-wrap: break-word;
 
-    line-height: 1.3em;
 
     padding-left: 1%;
     padding-right: 1%;
 
     margin-top: 7em;
     margin-bottom: 15%;
+
   }
 
   #disqust_thread {

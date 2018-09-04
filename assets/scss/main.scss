@@ -20,7 +20,12 @@ html, body {
   font-stretch: expanded;
 }
 
-
+/*pages/post/_id.vue 에서 이거 설정하면 다른애가 margin-bottom: 16px 로 잡아버린다.. */
+.markdown {
+  p {
+    margin-bottom: 0;
+  }
+}
 
 a {
   text-decoration: none;
