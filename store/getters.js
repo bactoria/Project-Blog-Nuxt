@@ -6,6 +6,9 @@ export default {
   post (state) {
     return state.post
   },
+  posts (state) {
+    return state.posts.content
+  },
   authentiti (status) {
     return status.authenticated
   },
