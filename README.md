@@ -2,38 +2,40 @@
 
 ![](assets/main.png)
 
+<br/>
+<br/>
 
-#### `Used Library`
+### `Used Library`
 
-**Framework** : Nuxt.js
+**1. Framework** : Nuxt.js
 
 <br/>
 
-**editor** : [tui-editor](https://github.com/nhnent/tui.editor)
+**2. editor** : [tui-editor](https://github.com/nhnent/tui.editor)
 
 ![](assets/editor.PNG)
 
 <br/>
 
-**paging** : [vuejs-paginate](https://github.com/lokyoung/vuejs-paginate) 
+**3. paging** : [vuejs-paginate](https://github.com/lokyoung/vuejs-paginate) 
 
 ![](assets/paging.PNG)
 
 <br/>
 
-**markdown** : [vue-markdown](https://github.com/miaolz123/vue-markdown)
+**4. markdown** : [vue-markdown](https://github.com/miaolz123/vue-markdown)
 
 ![](assets/markdown.PNG)
 
 <br/>
 
-**codeBlock** : [Prismjs](https://prismjs.com/)
+**5. codeBlock** : [Prismjs](https://prismjs.com/)
 
 ![](assets/codeBlock.PNG)
 
 <br/>
 <br/>
 
-#### `BackEnd Repository` (Spring Boot)
+### `BackEnd Repository` (Spring Boot)
 
 https://github.com/bactoria/ToyProject-Blog-REST
