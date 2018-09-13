@@ -21,9 +21,10 @@
     "markdown-it": "^8.4.1",
     "npm": "^6.1.0",
     "nuxt": "^1.0.0",
+    "tui-editor": "^1.2.6",
     "vue-markdown": "^2.2.4",
-    "vuetify": "^0.17.3",
-    "tui-editor": "^1.2.6"
+    "vuejs-paginate": "^2.0.1",
+    "vuetify": "^0.17.3"
   },
   "devDependencies": {
     "cross-env": "^5.0.1",

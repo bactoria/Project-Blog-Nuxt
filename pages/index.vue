@@ -1,8 +1,12 @@
 <template>
   <div align="center" class="root">
+
     <div>
       <span class="GodoB" style="font-size: 3em;">전체 글</span>
       <post-list />
+
+      <paginate subUrl="/posts"/>
+
     </div>
   </div>
 
@@ -10,12 +14,17 @@
 
 <script>
   import PostList from "../components/PostList";
-  export default {
-    components: {PostList},
-    middleware: 'allPosts'
+  import Paginate from "../components/Paginate";
 
+  export default {
+    components: {PostList, Paginate},
+    middleware: 'allPosts'
   }
+
 </script>
 
 <style lang="scss" scoped>
+
+
+
 </style>

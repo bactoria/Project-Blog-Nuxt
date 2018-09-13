@@ -17,6 +17,11 @@ export default {
   },
   markContent (status) {
     return status.markContent
+  },
+  searchedPosts (status) {
+    return status.searchedPosts
+  },
+  pageCount (status) {
+    return status.posts.totalPages
   }
-
 }
