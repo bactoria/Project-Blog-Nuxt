@@ -29,15 +29,8 @@
     computed: mapGetters({
       posts : 'posts'
     })
-
-    /*, ...?
-    methods: {
-      getPost(id) {
-        this.$router.push('/post/' + id);
-      }
-    }*/
-
   }
+
 </script>
 
 <style lang="scss" scoped>

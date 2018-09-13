@@ -12,17 +12,6 @@
   }
 
   export default {
-    head: {
-      css: [
-        /*for tui-editor*/
-/* \\이\\거안대자나 스방
-        'codemirror/lib/codemirror.css',
-        'tui-editor/dist/tui-editor.css',
-        'tui-editor/dist/tui-editor-contents.css',
-        'highlight.js/styles/github.css'
-*/
-      ],
-    },
     mounted: () => {
       var editor = new Editor({
         el: document.querySelector('#editSection'),
