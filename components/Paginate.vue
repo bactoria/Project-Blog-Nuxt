@@ -1,5 +1,6 @@
 <template>
   <paginate
+    class="paginate"
     v-model="page"
     :page-count="pageCount"
     :margin-pages="0"
@@ -13,6 +14,7 @@
     :next-link-class="'next-link-item'"
     :disabled-class="'ignore disabled'"
     :click-handler="clickCallback"
+    :no-li-surround="true"
   ></paginate>
 </template>
 
@@ -29,7 +31,7 @@
   export default {
     data() {
       return {
-        page: 0
+        page: 1
       }
     },
     components: {Paginate},
@@ -49,6 +51,22 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+
+
+
+/*  왜 안먹혀..? 그래서 글로벌로 줘버렸음ㅠ
+
+a.prev-link-item,
+  a.page-link-item,
+  a.next-link-item {
+    padding: .5em;
+    color: #66d9ef;
+
+    &:hover {
+      transform: scale(1.3);
+      color: #000000;
+    }
+  }*/
 
 </style>

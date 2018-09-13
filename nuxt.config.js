@@ -44,15 +44,17 @@ module.exports = {
     'codemirror/lib/codemirror.css',
     'tui-editor/dist/tui-editor.css',
     'tui-editor/dist/tui-editor-contents.css',
-    'highlight.js/styles/github.css'
+    'highlight.js/styles/github.css',
+
+    '@/assets/scss/paginate.scss'
   ],
   env: {
-    baseURL: process.env.BASE_URL || 'https://bactoria.me/api'
-/*    baseURL: (process.env.NODE_ENV === 'production' ? 'http://bactoria.me:8080' : 'http://bactoria.me:8080')*/
+    baseUrl: 'https://bactoria.me/api'
+    /*
+    ** Plugins to load before mounting the App
+    */
+
   },
-  /*
-  ** Plugins to load before mounting the App
-  */
   plugins: [
     '@/plugins/vuetify'
   ],
@@ -101,7 +103,7 @@ module.exports = {
       },
       cache: '/path/to/cache/dir'
     },
-    vendor: [ 'babel-polyfill', 'eventsource-polyfill', 'tui-editor' ]
+    vendor: [ 'babel-polyfill', 'eventsource-polyfill', 'tui-editor' , 'vuejs-paginate']
   }
 
 }

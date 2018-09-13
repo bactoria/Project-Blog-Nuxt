@@ -35,19 +35,3 @@ a {
 div {
   //border: 1px solid;
 }
-
-paginate {
-
-  padding: 1em;
-
-  li {
-    padding: .5em;
-    color: #66d9ef;
-
-    &:hover {
-      transform: scale(1.3);
-      color: #000000;
-    }
-  }
-
-}
