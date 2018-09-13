@@ -7,32 +7,32 @@
 
 **Framework** : Nuxt.js
 
-&bnsp;
+<br/>
 
 **editor** : [tui-editor](https://github.com/nhnent/tui.editor)
 
-![](assets/editor.png)
+![](assets/editor.PNG)
 
-&bnsp;
+<br/>
 
 **paging** : [vuejs-paginate](https://github.com/lokyoung/vuejs-paginate) 
 
-![](assets/paging.png)
+![](assets/paging.PNG)
 
-&bnsp;
+<br/>
 
 **markdown** : [vue-markdown](https://github.com/miaolz123/vue-markdown)
 
-![](assets/markdown.png)
+![](assets/markdown.PNG)
 
-&bnsp;
+<br/>
 
 **codeBlock** : [Prismjs](https://prismjs.com/)
 
-![](assets/codeBlock.png)
+![](assets/codeBlock.PNG)
 
-&bnsp;
-&bnsp;
+<br/>
+<br/>
 
 #### `BackEnd Repository` (Spring Boot)
 
