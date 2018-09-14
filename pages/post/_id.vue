@@ -100,7 +100,7 @@
     head() {
       return {
 
-        title: this.post.title + ' :: Bactoria',
+        title: '['+ this.post.category.name + '] ' + this.post.title + ' :: Bactoria',
         meta: [
           { hid: 'description', name: 'description', content: this.post.content },
         ],
