@@ -1,7 +1,7 @@
 <template>
   <div>
     <a class="SNS-icons" :href="icon.link" target="_blank" v-for="icon in icons">
-      <img :src="icon.src" width="30px" class="scaleUp"/>
+      <img :src="icon.src" width="40px" class="scaleUp"/>
     </a>
 
   </div>
@@ -15,7 +15,7 @@
             "name": "Github", "src": "/image/GithubIcon.png", "link": "https://github.com/bactoria"
           }, {
             "name": "Facebook",
-            "src": "/image/FacebookIcon.jpg",
+            "src": "/image/FacebookIcon.png",
             "link": "https://www.facebook.com/profile.php?id=100003593517742"
           }
           ]
@@ -28,9 +28,9 @@
 
   .SNS-icons{
 
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
 
     img {
       &:hover {
