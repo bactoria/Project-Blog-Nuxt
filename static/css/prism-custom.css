@@ -42,10 +42,12 @@ h4 {
 }
 
 /* list css에 안맞음 */
-ol,ul {
+.markdown ol,
+.markdown ul {
   margin-left:1.2em;
   margin-top:0.5em;
-  margin-bottom:0.5em
+  margin-bottom:0.5em;
+
 }
 
 li {

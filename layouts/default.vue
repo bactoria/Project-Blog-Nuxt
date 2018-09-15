@@ -11,39 +11,29 @@
     <v-toolbar dark app class="hidden-md-and-up black" fixed>
       <v-toolbar-side-icon
         @click.native.stop = "sideNav = !sideNav"></v-toolbar-side-icon>
-      <v-toolbar-title >
+      <v-toolbar-title>
         <a href="https://bactoria.me" class="GodoB" tag="span" style="cursor: pointer; color: #ffffff; text-decoration: none">Bactoria</a>
       </v-toolbar-title>
       <v-spacer></v-spacer>
         <search />
     </v-toolbar>
     <!-- <v-progress-linear :indeterminate="true"></v-progress-linear>-->
-    <main app>
-      <v-content>
 
-          <v-layout row wrap class="blank" style="background: white">
-            <div class="blank hidden-md-and-up"></div>
+    <div style="background-color: #f92672; width: 20%; height: 100vh; position: fixed" class="hidden-sm-and-down">
+      <!-- 왼쪽 메뉴 -->
+      <left-menu/>
+    </div>
 
-            <!-- 공백 -->
+    <main>
+      <v-content style="width: 20%; float: left;">
+      </v-content>
 
-            <!-- 왼쪽 -->
-            <v-flex md3 class="hidden-sm-and-down" >
-
-              <!-- 왼쪽 메뉴 -->
-              <left-menu/>
-
+      <v-content style="width: 80%; float: right;">
+        <!-- 본문 -->
+            <v-flex>
+               <nuxt />
             </v-flex>
 
-            <!-- 본문 -->
-            <v-flex xs12 md9>
-
-              <!-- 라우팅 -->
-              <nuxt />
-
-            </v-flex>
-
-
-          </v-layout>
       </v-content>
 
     </main>
@@ -89,10 +79,6 @@ import AdminToolbar from "../components/adminToolbar";
 
 
 <style lang="scss" scoped>
-
-  .blank {
-    padding-top: 40px;
-  }
 
   .pa-3 {
     margin-top : 10%

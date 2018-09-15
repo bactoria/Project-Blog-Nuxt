@@ -19,7 +19,7 @@
 
 <style lang="scss" scoped>
   .root {
-    margin-left:20%;
+    padding-left:10%;
+    padding-right:10%;
   }
-
 </style>

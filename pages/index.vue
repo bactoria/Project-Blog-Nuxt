@@ -2,7 +2,7 @@
   <div align="center" class="root">
 
     <div>
-      <span class="GodoB" style="font-size: 3em;">전체 글</span>
+      <span class="GodoB" style="font-size: 2em; color: #2ac1bc;">전체 글</span>
       <post-list />
 
       <paginate subUrl="/posts"/>

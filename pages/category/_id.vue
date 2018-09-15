@@ -1,7 +1,7 @@
 <template>
   <div align="center" class="root">
     <div>
-      <span class="GodoB" style="font-size: 3em;">{{category.name}}
+      <span class="GodoB" style="font-size: 2em; color: #2ac1bc;">{{category.name}}
 </span>
       <post-list />
       <paginate :subUrl="'/posts/categories/' + category.id" />
