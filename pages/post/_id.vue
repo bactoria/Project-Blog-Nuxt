@@ -185,6 +185,8 @@
     margin-top: 20px;
   }
 
+
+
   $breakpoints: (
     'xs': (max-width: 768px),
     'sm': (max-width: 992px),
@@ -214,10 +216,10 @@
       font-size: 1em;
     }
     @include respond-to('sm') {
-      font-size: 0.9em;
+      font-size: 0.8em;
     }
     @include respond-to('xs') {
-      font-size: 0.7em;
+      font-size: 0.5em;
     }
   }
 
