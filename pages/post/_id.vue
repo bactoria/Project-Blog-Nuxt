@@ -139,12 +139,8 @@
 <style lang="scss" scoped>
 
   .root {
-
-    margin-top: 3%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 3% 5% 5% 5%;
     max-width: 100%;
-
   }
 
   .PostTitle {
