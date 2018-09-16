@@ -1,7 +1,7 @@
 <template>
   <div>
     <a class="SNS-icons" :href="icon.link" target="_blank" v-for="icon in icons">
-      <img :src="icon.src" width="40px" class="scaleUp"/>
+      <img :src="icon.src" width="40px" />
     </a>
 
   </div>
@@ -32,10 +32,13 @@
     padding-right: 5px;
     padding-top: 5px;
 
-    img {
-      &:hover {
-        transform: scale(1.1);
 
+    img {
+      opacity: 0.4;
+
+      &:hover {
+        transform: scale(1.05);
+        opacity: 1;
      }
     }
   }
