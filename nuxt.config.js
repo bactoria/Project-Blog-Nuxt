@@ -22,6 +22,7 @@ module.exports = {
       { property: 'og:description', content:'bactoria 블로그입니다.'},
       { property: 'og:image', content:'https://avatars0.githubusercontent.com/u/25674959?s=460&v=4'},
       { property: 'og:url', content:'https://bactoria.me'}
+      { name: "naver-site-verification", content: "5ff122cee9e8c46a22d5c847131f546eb12fe26f"}
     ],
     script: [
     ],
