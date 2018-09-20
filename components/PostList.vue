@@ -64,11 +64,11 @@
   }
 
 
-
+  //https://vuetifyjs.com/ko/layout/breakpoints 의 규격에 맞춤.
   $breakpoints: (
-    'xs': (max-width: 768px),
-    'sm': (max-width: 992px),
-    'md': (max-width: 1200px)
+    'xs': (max-width: 599px),
+    'sm': (max-width: 959px),
+    'md': (max-width: 1263px)
   ) !default;
 
   /* responsive scss */
