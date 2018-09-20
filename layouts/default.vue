@@ -19,16 +19,13 @@
     </v-toolbar>
     <!-- <v-progress-linear :indeterminate="true"></v-progress-linear>-->
 
-    <div style="background-color: #f92672; width: 20%; height: 100vh; position: fixed" class="hidden-sm-and-down">
+    <div style="background-color: #f92672; width: 250px; height: 100vh; position: fixed" class="hidden-sm-and-down">
       <!-- 왼쪽 메뉴 -->
       <left-menu/>
     </div>
 
-    <main>
-      <v-content style="width: 20%; float: left;">
-      </v-content>
-
-      <v-content style="width: 80%; float: right;">
+    <main class="main">
+      <v-content>
         <!-- 본문 -->
             <v-flex>
                <nuxt />
@@ -76,4 +73,12 @@ import AdminToolbar from "../components/adminToolbar";
 
 <style lang="scss" scoped>
 
+  @media (min-width: 959px) {
+
+    .main {
+      width: calc(100% - 250px);
+      position: absolute; left: 250px;
+    }
+
+  }
 </style>
