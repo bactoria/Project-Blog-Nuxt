@@ -103,6 +103,11 @@
         title: '['+ this.post.category.name + '] ' + this.post.title + ' :: Bactoria',
         meta: [
           { hid: 'description', name: 'description', content: this.post.content },
+          { property: 'og:type', content:'website'},
+          { property: 'og:title', content:this.post.title},
+          { property: 'og:description', content:this.post.content},
+          { property: 'og:image', content:'https://avatars0.githubusercontent.com/u/25674959?s=460&v=4'},
+          { property: 'og:url', content:'https://bactoria.me/post/'+this.$route.params.id}
         ],
         script: [
           {src: 'https://bactoria.disqus.com/count.js', id: 'dsq-count-scr', body: true},
