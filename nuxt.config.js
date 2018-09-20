@@ -16,7 +16,12 @@ module.exports = {
       { charset: 'utf-8' },
       { property: "fb:app_id", content: '223610565072661' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: pkg.description },
+      { property: 'og:type', content:'website'},
+      { property: 'og:title', content:'bactoria 블로그'},
+      { property: 'og:description', content:'bactoria 블로그입니다.'},
+      { property: 'og:image', content:'https://avatars0.githubusercontent.com/u/25674959?s=460&v=4'},
+      { property: 'og:url', content:'https://bactoria.me'}
     ],
     script: [
     ],
