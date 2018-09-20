@@ -2,6 +2,8 @@ const pkg = require('./package')
 
 const nodeExternals = require('webpack-node-externals')
 
+const axios = require('axios')
+
 module.exports = {
   mode: 'universal',
 
@@ -66,7 +68,9 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
     // With options
-    '@nuxtjs/proxy'
+    '@nuxtjs/proxy',
+    // for RSS feed
+    '@nuxtjs/feed'
   ],
 
   proxy: {
@@ -79,7 +83,32 @@ module.exports = {
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
   },
+  feed: [{
+    path: '/rss',
 
+    async create(feed) {
+      feed.options = {
+        title: 'bactoria 블로그',
+        link: 'https://bactoria.me/rss',
+        description: 'bactoria 블로그',
+        image: 'https://avatars0.githubusercontent.com/u/25674959?s=460&v=4',
+      }
+
+      return axios.get('https://bactoria.me/api/feed')
+        .then((res) => {
+          res.data.forEach(post => {
+            feed.addItem({
+              title: post.title,
+              description: post.content,
+              link: 'https://bactoria.me/post/' + post.id,
+              date: new Date(post.createdDate)
+            })
+          })
+        })
+    },
+    cacheTime: 1000 * 60 * 15, // 15 min
+    type: 'rss2'
+  }],
   /*
   ** Build configuration
   */

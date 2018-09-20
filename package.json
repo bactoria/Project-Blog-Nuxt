@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
+    "@nuxtjs/feed": "^0.1.1",
     "@nuxtjs/proxy": "^1.2.4",
     "ajv": "^6.4.0",
     "axios": "^0.18.0",
