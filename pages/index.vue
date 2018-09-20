@@ -18,13 +18,23 @@
 
   export default {
     components: {PostList, Paginate},
-    middleware: 'allPosts'
+    middleware: 'allPosts',
+    head() {
+      return {
+        meta: [
+          {property: 'og:type', content: 'website'},
+          {property: 'og:title', content: 'bactoria 블로그'},
+          {property: 'og:description', content: 'bactoria 블로그입니다.'},
+          {property: 'og:image', content: 'https://avatars0.githubusercontent.com/u/25674959?s=460&v=4'},
+          {property: 'og:url', content: 'https://bactoria.me'}
+        ]
+      }
+    }
   }
 
 </script>
 
 <style lang="scss" scoped>
-
 
 
 </style>
