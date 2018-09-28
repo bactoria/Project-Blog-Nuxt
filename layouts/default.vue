@@ -15,7 +15,7 @@
       </section>
 
       <!--Second Page-->
-      <section class="fp-section main" :class="{active: isBlogUrl}"
+      <section class="fp-section main"
                style=" background-color: white; height: 100vh;">
         <nuxt/>
       </section>
@@ -62,15 +62,11 @@
         isBlogUrl: false
       }
     },
-    created() {
-      // 'bactoria.me' 로 접속하면 메인페이지 띄우고, 그외에는 무조건 2번째 페이지를 active한다.
-      if (this.$route.path !== '/') {
-        this.isBlogUrl = true
-      }
-    },
     mounted() {
 
       new fullPage('#fullpage', { //! 헛!!!! fullpage 하니까 vue-fullpage 의 음...객체가 만들어졌었음ㅋㅋㅋㅋㅋㅋㅋㅋㅋ 모지????????......
+
+        anchors: ['aboutMe', 'blog'],
 
         //Scroll
         sectionSelector: '.fp-section',
@@ -80,6 +76,12 @@
         //Design
         controlArrows: true
       });
+
+      // 'bactoria.me' 로 접속하면 메인페이지 띄우고, 그외에는 blog 페이지로 이동한다.
+      if (this.$route.path !== '/') {
+        fullpage_api.moveTo('blog', 1);
+      }
+
     },
     components: {
       AdminToolbar,
