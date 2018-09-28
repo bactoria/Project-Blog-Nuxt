@@ -1,36 +1,29 @@
 <template>
-<div align="center" >
+  <div align="center">
 
-  <div class="category GodoB">CATEGORY</div>
-  <div>
-  <v-list align="center" >
-   <v-list-tile v-for="category in categories" :key="category.id">
-      <v-list-tile-content class="GodoB" style="align-items: center;">
+    <div class="category GodoB">CATEGORY</div>
 
-        <a class="categoryA" :href="'/category/' + category.id">
-          <span >{{category.name}}</span>
-        </a>
+    <category/>
 
-      </v-list-tile-content>
-    </v-list-tile>
-  </v-list>
-</div>
-</div>
+    <link-icon style="position: absolute; bottom: 5vh;"/>
+  </div>
 
 </template>
 
 <script>
   import {mapGetters} from 'vuex'
+  import Category from "./Category";
+  import LinkIcon from "./LinkIcon";
 
   export default {
-
+    components: {Category, LinkIcon},
     middleware: 'category',
 
     computed:
-      mapGetters (['categories']),
+      mapGetters(['categories']),
     methods: {
-      findPosts (category) {
-        this.$router.push('/category/'+category.id);
+      findPosts(category) {
+        this.$router.push('/category/' + category.id);
       }
     }
 
@@ -39,34 +32,15 @@
 
 <style lang="scss" scoped>
 
-  .center{
+  .center {
     text-align: center;
   }
 
   .category {
-    font-size: 20px;
+    font-size: 2.2em;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
   }
 
-  .categoryA {
-
-    span {
-      text-decoration: none;
-      font-size: 15px;
-      text-align: center;
-      cursor:pointer;
-      color: #aaaaaa;
-
-
-      &:hover {
-        color: #000000;
-      }
-    }
-
-    &:hover {
-      transform: scale(1.3);
-    }
-
-    }
 </style>
