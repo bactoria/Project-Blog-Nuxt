@@ -23,6 +23,7 @@
 <style lang="scss" scoped>
   .root {
     background-color: #f92672;
+    font-size: 1.3vw;
   }
 
   .bactoria {
