@@ -1,11 +1,11 @@
 <template>
-  <div align="center" class="root">
+  <div align="center" class="root" style="position: absolute; top:5vh; width: 100%;">
     <div>
       <span class="GodoB" style="font-size: 2em; color: #2ac1bc;">{{category.name}}
 </span>
+    </div>
       <post-list />
       <paginate :subUrl="'/posts/categories/' + category.id" />
-    </div>
   </div>
 </template>
 
