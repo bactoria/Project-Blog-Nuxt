@@ -12,7 +12,7 @@
   <div class="searchResult GodoB">
       <span style="font-size: 20px;">'{{searchData}}'</span> 에 대한 검색결과 {{searchedPostsCount}} 건
   </div>
-{{this.$store.state.posts}}
+
     <post-list />
 
   </div>
