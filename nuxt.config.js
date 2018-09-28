@@ -49,7 +49,9 @@ module.exports = {
     'tui-editor/dist/tui-editor-contents.css',
     'highlight.js/styles/github.css',
 
-    '@/assets/scss/paginate.scss'
+    '@/assets/scss/paginate.scss',
+
+    'fullpage.js/dist/fullpage.min.css'
   ],
   env: {
     baseUrl: 'https://bactoria.me/api'
@@ -133,7 +135,7 @@ module.exports = {
       },
       cache: '/path/to/cache/dir'
     },
-    vendor: [ 'babel-polyfill', 'eventsource-polyfill', 'tui-editor' , 'vuejs-paginate']
+    vendor: [ 'babel-polyfill', 'eventsource-polyfill', 'tui-editor' , 'vuejs-paginate', 'fullpage.js']
   }
 
 }
