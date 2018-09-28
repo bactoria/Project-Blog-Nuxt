@@ -1,5 +1,5 @@
 <template>
-  <div class="root" align="center">
+  <div class="root">
     <!-- post
     [0] : id
     [1] : categoryId
