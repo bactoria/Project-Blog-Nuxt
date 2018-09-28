@@ -1,21 +1,18 @@
 <template>
-<div align="center">
+  <div align="center">
 
-  <!--<div class="category GodoB">CATEGORY</div>-->
-  <div>
-    <v-list align="center" style="background-color: #f92672;">
-      <v-list-tile v-for="category in categories" :key="category.id" style=" width: 100%;">
-        <v-list-tile-content class="GodoB" style="align-items: center;">
-          <a class="categoryA"  :href="'/category/' + category.id" style="color: #fec7da;">
-          {{category.name}}
+    <!--<div class="category GodoB">CATEGORY</div>-->
+    <div>
+      <div v-for="category in categories" :key="category.id" style=" width: 100%;">
+        <div class="GodoB hover" style="align-items: center; margin: 1vh 0 1vh 0">
+          <a class="categoryA" :href="'/category/' + category.id" style="color: #fec7da;">
+            {{category.name}}
           </a>
+        </div>
+      </div>
+    </div>
 
-        </v-list-tile-content>
-      </v-list-tile>
-    </v-list>
   </div>
-
-</div>
 
 </template>
 
@@ -39,23 +36,24 @@
 
 <style lang="scss" scoped>
 
+  .hover {
+    &:hover {
+      transform: scale(1.15);
+    }
+  }
+
   .category {
     font-size: 2.3em;
     text-align: center;
-    margin-top: 20px;
+
   }
 
   .categoryA {
 
-    &:hover {
-      transform: scale(1.15);
-    }
-
     text-decoration: none;
     font-size: 1.5em;
     text-align: center;
-    cursor:pointer;
-
+    cursor: pointer;
 
   }
 </style>
