@@ -36,13 +36,6 @@
                     :source="post.content" :show="show" :html="html" :breaks="breaks" :linkify="linkify"
                     :emoji="emoji" :typographer="typographer"></vue-markdown>
 
-      <div align="center">
-        <a href="#" style="text-decoration: none">
-          <v-icon style="right:0;
-       font-size: 60px;">arrow_drop_up
-          </v-icon>
-        </a>
-      </div>
     </article>
     <!-- Facebook 좋아요 --> <!--Docs- https://developers.facebook.com/docs/plugins/like-button -->
     <div class="fb-like"
