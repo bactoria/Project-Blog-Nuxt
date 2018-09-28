@@ -12,7 +12,7 @@
         <div class="GodoB">
           {{post[2]}}
         </div>
-        <div align="right" class="GodoM" style="padding-right: 10px; font-size: 0.8em;">
+        <div class="GodoM" style="font-size: 0.8em; position: absolute; right: 2%; bottom: 1%;">
           {{post[3].split("T")[0]}}
         </div>
       </a>
