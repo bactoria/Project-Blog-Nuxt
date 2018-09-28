@@ -57,11 +57,6 @@ import AdminToolbar from "../components/adminToolbar";
     data () {
       return {
         sideNav: false,
-        smile: false,
-        checked: 'asd',
-        iid: '4',
-        unchecked: 'qwe',
-        itsreal: 'real'
       }
     },
     mounted() {
