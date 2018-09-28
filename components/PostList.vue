@@ -27,13 +27,15 @@
 
   export default {
     computed: mapGetters({
-      posts : 'posts'
+      posts: 'posts'
     })
   }
 
 </script>
 
 <style lang="scss" scoped>
+
+  $mobile-size: 959px;
 
   .root {
     margin-left: 7%;
@@ -44,8 +46,8 @@
     box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 6px, rgba(0, 0, 0, 0.3) 0px 1px 4px;
     margin: 15px;
 
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 4.5vh;
+    padding-bottom: 4.5vh;
 
     transition: .15s all ease-in-out;
     background-image: url("/static/image/backboard.jpg");
@@ -63,4 +65,11 @@
     }
   }
 
+  /*Mobile Env*/
+  @media (max-width: $mobile-size) {
+    .card {
+      padding-top: 3vh;
+      padding-bottom: 3vh;
+    }
+  }
 </style>
