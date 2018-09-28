@@ -146,6 +146,7 @@
   .root {
     margin: 3% 5% 5% 5%;
     max-width: 100%;
+    padding-bottom: 20em;
   }
 
   .PostTitle {
