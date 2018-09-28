@@ -37,4 +37,41 @@
 <style lang="scss" scoped>
 
 
+  //https://vuetifyjs.com/ko/layout/breakpoints 의 규격에 맞춤.
+  $breakpoints: (
+    'xs': (max-width: 599px),
+    'sm': (max-width: 959px),
+    'md': (max-width: 1263px)
+  ) !default;
+
+  /* responsive scss */
+
+  @mixin respond-to($breakpoint) {
+    // If the key exists in the map
+    @if map-has-key($breakpoints, $breakpoint) {
+      // Prints a media query based on the value
+      @media #{inspect(map-get($breakpoints, $breakpoint))} {
+        @content;
+      }
+    }
+      // If the key doesn't exist in the map
+    @else {
+      @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+    }
+  }
+
+  .root {
+
+    @include respond-to('md') {
+      font-size: 1em;
+    }
+    @include respond-to('sm') {
+      font-size: 0.8em;
+    }
+    @include respond-to('xs') {
+      font-size: 0.5em;
+    }
+  }
+
 </style>
