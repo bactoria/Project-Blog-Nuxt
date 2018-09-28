@@ -98,6 +98,11 @@
   .image {
     height: 15vw;
     margin: 2vh 0vw 2vh 0vw;
+
+    img {
+      border-radius: 5%;
+     /* border: 2px solid #333333;*/
+    }
   }
 
   .title_fp {
