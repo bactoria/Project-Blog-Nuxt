@@ -76,8 +76,6 @@
         sectionSelector: '.fp-section',
         scrollOverflow: true,
         scrollingSpeed: 1000,
-        loopTop: true,
-        loopBottom: true,
 
         //Design
         controlArrows: true
