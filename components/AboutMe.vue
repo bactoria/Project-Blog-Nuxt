@@ -131,7 +131,7 @@
     }
 
     .info_fp {
-      font-size: 4vw;
+      font-size: 5vw;
       line-height: 9vh;
       margin-left: 3vw;
       position: absolute;
