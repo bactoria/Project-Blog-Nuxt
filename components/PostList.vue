@@ -9,7 +9,7 @@
 
     <v-card class="card" v-for="post in posts" :key="post[0]">
       <a class="none_" :href="'/post/'+post[0]">
-        <div class="GodoB" style="font-size: 1.3em; padding-top: 1em;">
+        <div class="GodoB">
           {{post[2]}}
         </div>
         <div align="right" class="GodoM" style="padding-right: 10px; font-size: 0.8em;">
