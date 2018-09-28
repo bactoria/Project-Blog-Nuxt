@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div style="width: 100%">
     <a class="SNS-icons" :href="icon.link" target="_blank" v-for="icon in icons">
-      <img :src="icon.src" width="40px" />
+      <img :src="icon.src"  style="width:20%;"/>
     </a>
 
   </div>
