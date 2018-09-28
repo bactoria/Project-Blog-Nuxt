@@ -47,6 +47,11 @@ import LeftMenu from "../components/LeftMenu";
 import SideMenu from "../components/SideMenu";
 import Search from "../components/Search"
 import AdminToolbar from "../components/adminToolbar";
+  let fullPage;
+  if (process.browser) {
+    require('fullpage.js/vendors/scrolloverflow.min');
+    fullPage = require('fullpage.js/dist/fullpage.min');
+  }
 
   export default {
     data () {
@@ -58,6 +63,21 @@ import AdminToolbar from "../components/adminToolbar";
         unchecked: 'qwe',
         itsreal: 'real'
       }
+    },
+    mounted() {
+
+      new fullPage('#fullpage', { //! 헛!!!! fullpage 하니까 vue-fullpage 의 음...객체가 만들어졌었음ㅋㅋㅋㅋㅋㅋㅋㅋㅋ 모지????????......
+
+        //Scroll
+        sectionSelector: '.fp-section',
+        scrollOverflow: true,
+        scrollingSpeed: 1000,
+        loopTop: true,
+        loopBottom: true,
+
+        //Design
+        controlArrows: true
+      });
     },
     components: {
       AdminToolbar,
