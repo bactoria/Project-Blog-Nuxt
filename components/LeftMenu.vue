@@ -22,8 +22,6 @@
 
 <style lang="scss" scoped>
   .root {
-    padding-left:10%;
-    padding-right:10%;
   }
 
   .bactoria {
