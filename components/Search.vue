@@ -1,5 +1,5 @@
 <template>
-  <div class="GodoM">
+  <div class="GodoM search">
 
     <div align="center" class="hidden-sm-and-down">
     <v-text-field placeholder="Search..."
@@ -43,5 +43,11 @@
 </script>
 
 <style scoped>
+
+  .search {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
 </style>
