@@ -1,5 +1,10 @@
 <template>
   <div class="root" align="center">
+
+    <div class="root" style="margin: 1.5em 0 1em 0;">
+      <a href="/" tag="span" class="bactoria GodoB" align="center">Bactoria</a>
+    </div>
+
     <category/>
     <search/>
     <link-icon />
@@ -20,4 +25,18 @@
     padding-left:10%;
     padding-right:10%;
   }
+
+  .bactoria {
+    font-size: 2.5em;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    opacity: 0.6;
+
+    &:hover {
+      opacity: 1;
+    }
+
+  }
+
 </style>
