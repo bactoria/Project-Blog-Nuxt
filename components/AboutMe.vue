@@ -25,7 +25,7 @@
         <!--Info-->
         <div class="info_text">부경대학교<br/>컴퓨터공학과 4학년<br/>bactoria@gmail.com<br/>1993.05.08</div>
 
-        <link-icon class="asd"/>
+        <link-icon class="link-icon"/>
 
       </div>
     </div>
@@ -107,7 +107,7 @@
 
   /*Mobile Env*/
   @media (max-width: $mobile-size) {
-    .asd {
+    .link-icon {
       width: 50vw;
       height: 20vh;
     }
