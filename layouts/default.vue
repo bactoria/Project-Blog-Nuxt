@@ -2,51 +2,53 @@
 
   <v-app style="background: white;">
 
-   <!-- 네비 -->
-    <v-navigation-drawer app fixed temporary v-model="sideNav">
+
+    <v-navigation-drawer app temporary v-model="sideNav" fixed style="background-color: #f92672;">
       <side-menu/>
     </v-navigation-drawer>
 
-    <!-- 툴바 -->
-    <v-toolbar dark app class="hidden-md-and-up black" fixed>
-      <v-toolbar-side-icon
-        @click.native.stop = "sideNav = !sideNav"></v-toolbar-side-icon>
-      <v-toolbar-title>
-        <a href="https://bactoria.me" class="GodoB" tag="span" style="cursor: pointer; color: #ffffff; text-decoration: none">Bactoria</a>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-        <search />
-    </v-toolbar>
-    <!-- <v-progress-linear :indeterminate="true"></v-progress-linear>-->
+    <div id="fullpage">
 
-    <div style="background-color: #f92672; width: 250px; height: 100vh; position: fixed" class="hidden-sm-and-down">
-      <!-- 왼쪽 메뉴 -->
-      <left-menu/>
+      <!--First Page-->
+      <section class="fp-section">
+        <about-me/>
+      </section>
+
+      <!--Second Page-->
+      <section class="fp-section main" :class="{active: isBlogUrl}"
+               style=" background-color: white; height: 100vh;">
+        <nuxt/>
+      </section>
+
+      <!--Left Menu-->
+      <div class="leftMenu hidden-sm-and-down">
+        <!--오예 앱솔루트 만세 fix로 하면 크롬이랑 익스때 위치가다름..-->
+        <!--Second Page에 넣으니까.. 게시물을 내릴 때 leftMenu가 pix되지가 않음...-->
+        <left-menu/>
+      </div>
+
+      <!--Toolbar-->
+      <v-toolbar app class="hidden-md-and-up white" flat style="position: absolute; top:100vh; opacity: 0.6 ">
+        <v-toolbar-side-icon app fixed
+                             @click.native.stop="sideNav = !sideNav"></v-toolbar-side-icon>
+      </v-toolbar>
+
     </div>
-
-    <main class="main">
-      <v-content>
-        <!-- 본문 -->
-            <v-flex>
-               <nuxt />
-            </v-flex>
-
-      </v-content>
-
-    </main>
-
-    <admin-toolbar/>
-
   </v-app>
 </template>
 
+
+<!--      <admin-toolbar/>-->
+
 <script>
-import Category from '~/components/Category'
-import AboutMe from '~/components/AboutMe'
-import LeftMenu from "../components/LeftMenu";
-import SideMenu from "../components/SideMenu";
-import Search from "../components/Search"
-import AdminToolbar from "../components/adminToolbar";
+  import Category from '~/components/Category'
+  import LeftMenu from "../components/LeftMenu";
+  import SideMenu from "../components/SideMenu";
+  import Search from "../components/Search"
+  import AdminToolbar from "../components/adminToolbar";
+  import AboutMe from "../components/AboutMe"
+
+
   let fullPage;
   if (process.browser) {
     require('fullpage.js/vendors/scrolloverflow.min');
@@ -54,9 +56,16 @@ import AdminToolbar from "../components/adminToolbar";
   }
 
   export default {
-    data () {
+    data() {
       return {
         sideNav: false,
+        isBlogUrl: false
+      }
+    },
+    created() {
+      // 'bactoria.me' 로 접속하면 메인페이지 띄우고, 그외에는 무조건 2번째 페이지를 active한다.
+      if (this.$route.path !== '/') {
+        this.isBlogUrl = true
       }
     },
     mounted() {
@@ -88,12 +97,30 @@ import AdminToolbar from "../components/adminToolbar";
 
 <style lang="scss" scoped>
 
-  @media (min-width: 959px) {
+  $left-menu-width: 20vw;
+  $mobile-size: 959px;
 
-    .main {
-      width: calc(100% - 250px);
-      position: absolute; left: 250px;
-    }
-
+  .main {
+    width: calc(100% - #{$left-menu-width});
+    float: right;
   }
+
+  .leftMenu {
+    background-color: #f92672;
+
+    width: $left-menu-width;
+    height: 100vh;
+
+    position: absolute;
+    top: 100vh;
+  }
+
+  /*Mobile Env*/
+  @media (max-width: $mobile-size) {
+    .main {
+      width: 100%;
+    }
+  }
+
 </style>
+
