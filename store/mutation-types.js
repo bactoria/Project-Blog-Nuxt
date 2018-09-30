@@ -2,7 +2,8 @@
 https://github.com/github1586/nuxt-bnhcp/blob/master/store/mutation-types.js
 */
 
-  export const POSTS = 'POSTS'
+  export const
+    POSTS = 'POSTS'
   export const CATEGORIES = 'CATEGORIES'
   export const POST = 'POST'
   export const CSR = 'CSR'

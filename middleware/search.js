@@ -1,5 +1,5 @@
 import axios from '~/plugins/axios';
-import {SEARCH_POSTS} from "../store/mutation-types";
+import {POSTS} from "../store/mutation-types";
 
 export default function ( {params, store} ) {
 
@@ -10,6 +10,6 @@ export default function ( {params, store} ) {
 
   return axios.get('/posts/search/' + encodeURI(params.searchData))
         .then((res) => {
-          store.commit(SEARCH_POSTS,res.data)
+          store.commit(POSTS,res.data)
         });
 }

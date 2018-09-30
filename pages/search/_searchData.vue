@@ -1,19 +1,20 @@
 <template>
   <div class="root" align="center">
 
-  <!-- post
-[0] : id
-[1] : categoryId
-[2] : title
-[3] : createdDate
--->
+    <!-- post
+  [0] : id
+  [1] : categoryId
+  [2] : title
+  [3] : createdDate
+  -->
 
+    <div class="searchResult GodoB">
+      <span style="font-size: 1em;">'{{searchData}}'</span> 에 대한 검색결과 {{postsCount}} 건
+    </div>
 
-  <div class="searchResult GodoB">
-      <span style="font-size: 20px;">'{{searchData}}'</span> 에 대한 검색결과 {{searchedPostsCount}} 건
-  </div>
+    <post-list/>
 
-    <post-list />
+    <paginate :subUrl="'/search/' + searchData"/>
 
   </div>
 </template>
@@ -21,20 +22,22 @@
 <script>
   import {mapGetters} from 'vuex'
   import PostList from "../../components/PostList";
+  import Paginate from "../../components/Paginate";
 
   export default {
-    components: {PostList},
+    components: {PostList, Paginate},
     middleware: 'search',
-    data () {
+    data() {
       return {
-        searchData: this.$route.params.searchData
+        searchData: this.$route.params.searchData,
+        postsCount: ''
       }
     },
-    created () {
-      this.searchedPostsCount= this.searchedPosts.length
+    created() {
+      this.postsCount = this.posts.length
     },
-    computed : mapGetters({
-      searchedPosts : 'searchedPosts'
+    computed: mapGetters({
+      posts: 'posts'
     })
 
   }
