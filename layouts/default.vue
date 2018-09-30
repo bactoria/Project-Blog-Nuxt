@@ -66,6 +66,9 @@
 
       new fullPage('#fullpage', { //! 헛!!!! fullpage 하니까 vue-fullpage 의 음...객체가 만들어졌었음ㅋㅋㅋㅋㅋㅋㅋㅋㅋ 모지????????......
 
+        //LicenseKey
+        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+
         anchors: ['aboutMe', 'blog'],
 
         //Scroll
