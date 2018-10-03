@@ -109,8 +109,6 @@
   }
 
   .leftMenu {
-    background-color: #f92672;
-
     width: $left-menu-width;
     height: 100vh;
 
