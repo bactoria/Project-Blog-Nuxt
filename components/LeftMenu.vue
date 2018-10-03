@@ -1,7 +1,7 @@
 <template>
   <div class="root" align="center">
 
-    <div class="root" style="margin: 1.5em 0 1em 0;">
+    <div style="padding: 1.5em 0 1em 0;">
       <a href="/" tag="span" class="bactoria GodoB" align="center">Bactoria</a>
     </div>
 
@@ -22,6 +22,7 @@
 
 <style lang="scss" scoped>
   .root {
+    height: 100%;
     background-color: #f92672;
     font-size: 1.3vw;
   }
