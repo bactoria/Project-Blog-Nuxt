@@ -61,7 +61,8 @@ module.exports = {
 
   },
   plugins: [
-    '@/plugins/vuetify'
+    '@/plugins/vuetify',
+    { src: '~plugins/ga.js', ssr: false }
   ],
 
   /*
