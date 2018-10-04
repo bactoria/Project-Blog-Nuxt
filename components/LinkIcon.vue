@@ -12,12 +12,19 @@
       data() {
         return {
           icons: [{
-            "name": "Github", "src": "/image/GithubIcon.png", "link": "https://github.com/bactoria"
+            "name": "Github",
+            "src": "/image/GithubIcon.png",
+            "link": "https://github.com/bactoria"
           }, {
             "name": "Facebook",
             "src": "/image/FacebookIcon.png",
             "link": "https://www.facebook.com/profile.php?id=100003593517742"
+          }, {
+            "name": "rss",
+            "src": "/image/RssIcon.png",
+            "link": "https://bactoria.me/api/feed"
           }
+
           ]
         }
       }
