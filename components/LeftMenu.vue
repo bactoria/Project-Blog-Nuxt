@@ -7,7 +7,7 @@
 
     <category/>
     <search/>
-    <link-icon />
+    <link-icon pageName="blog"/>
   </div>
 </template>
 
@@ -15,6 +15,7 @@
   import Category from "./Category";
   import Search from "./Search";
   import LinkIcon from "./LinkIcon"
+
   export default {
     components: {Category, Search, LinkIcon}
   }
