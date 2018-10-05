@@ -103,8 +103,10 @@
   $mobile-size: 959px;
 
   .main {
-    width: calc(100% - #{$left-menu-width});
-    float: right;
+    width: calc(100vw - #{$left-menu-width});
+
+    position: relative;
+    left: 20vw;
   }
 
   .leftMenu {
