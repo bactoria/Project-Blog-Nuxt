@@ -137,9 +137,8 @@
 <style lang="scss" scoped>
 
   .root {
-    margin: 3% 5% 5% 5%;
+    padding: 3% 5% calc(10% + 20em) 5%;
     max-width: 100%;
-    padding-bottom: 20em;
   }
 
   .PostTitle {
