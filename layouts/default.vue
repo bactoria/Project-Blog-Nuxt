@@ -15,8 +15,7 @@
       </section>
 
       <!--Second Page-->
-      <section class="fp-section main"
-               style=" background-color: white; height: 100vh;">
+      <section class="fp-section main">
         <nuxt/>
       </section>
 
