@@ -120,7 +120,10 @@
   /*Mobile Env*/
   @media (max-width: $mobile-size) {
     .main {
-      width: 100%;
+      width: 100vw;
+
+      position: relative;
+      left: 0vw
     }
   }
 
