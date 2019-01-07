@@ -5,6 +5,9 @@
       <a href="/" tag="span" class="bactoria GodoB" align="center">Bactoria</a>
     </div>
 
+    <div>
+      <img src="/image/me5.jpg" style="border-radius: 50%"; width="60%"/>
+    </div>
     <category/>
     <search/>
     <link-icon pageName="blog"/>
