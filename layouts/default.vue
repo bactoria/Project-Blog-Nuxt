@@ -2,6 +2,11 @@
 
   <v-app style="background: white;">
 
+    <!--Toolbar-->
+    <v-toolbar app class="hidden-md-and-up white" flat style="position: fixed; top:0vh; opacity: 0.6 ">
+      <v-toolbar-side-icon app fixed
+                           @click.native.stop="sideNav = !sideNav"></v-toolbar-side-icon>
+    </v-toolbar>
 
     <v-navigation-drawer app temporary v-model="sideNav" fixed style="background-color: #f92672;">
       <side-menu/>
