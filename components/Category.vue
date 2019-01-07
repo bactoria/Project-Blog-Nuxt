@@ -1,7 +1,6 @@
 <template>
   <div align="center">
 
-    <!--<div class="category GodoB">CATEGORY</div>-->
     <div>
       <div v-for="category in categories" :key="category.id" style=" width: 100%;">
         <div class="GodoB hover" style="align-items: center; margin: 1vh 0 1vh 0">
@@ -42,16 +41,9 @@
     }
   }
 
-  .category {
-    font-size: 2.3em;
-    text-align: center;
-
-  }
-
   .categoryA {
 
     text-decoration: none;
-    font-size: 1.5em;
     text-align: center;
     cursor: pointer;
 

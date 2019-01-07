@@ -8,7 +8,7 @@
     -->
 
     <a v-for="post in posts" :key="post[0]" class="card" :href="'/post/'+post[0]">
-        <div class="GodoB centerPosition">
+      <div class="GodoB centerPosition">
           {{post[2]}}
         </div>
         <div class="GodoM" style="font-size: 0.8em; position: absolute; right: 2%; bottom: 1%;">
@@ -36,17 +36,17 @@
   $mobile-size: 959px;
 
   .root {
-    margin-left: 7%;
-    margin-right: 7%;
+    width: 50%;
   }
 
   .card {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 6px, rgba(0, 0, 0, 0.3) 0px 1px 4px;
     margin: 15px;
 
-    height: 10vh;
+    height: 12vh;
 
     transition: .15s all ease-in-out;
+
     background-image: url("/static/image/backboard.jpg");
     background-repeat: repeat;
 
@@ -62,6 +62,8 @@
     }
 
     .centerPosition {
+      width: 100%;
+      font-size: 1.4em;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -71,9 +73,11 @@
 
   /*Mobile Env*/
   @media (max-width: $mobile-size) {
-    .card {
-      padding-top: 3vh;
-      padding-bottom: 3vh;
+
+    .root {
+      width: 90%;
+      font-size: 0.6em;
     }
+
   }
 </style>

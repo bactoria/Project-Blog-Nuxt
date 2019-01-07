@@ -4,7 +4,7 @@
       <img :src="icon.src" style="width:20%;"/>
     </a>
 
-    <a v-if=" pageName === 'blog' " class="link-icons" :href="rss.link" target="_blank">
+    <a class="link-icons" :href="rss.link" target="_blank">
       <img :src="rss.src" style="width:20%;"/>
     </a>
 
@@ -30,8 +30,7 @@
           "link": "https://bactoria.me/api/feed"
         }
       }
-    },
-    props: ['pageName']
+    }
   }
 </script>
 

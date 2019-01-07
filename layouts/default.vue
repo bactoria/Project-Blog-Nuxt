@@ -36,7 +36,6 @@
   import SideMenu from "../components/SideMenu";
   import Search from "../components/Search"
   import AdminToolbar from "../components/adminToolbar";
-  import AboutMe from "../components/AboutMe"
 
 
   export default {
