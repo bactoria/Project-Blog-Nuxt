@@ -17,7 +17,6 @@
     "axios": "^0.18.0",
     "es6-promise": "^4.2.4",
     "eventsource-polyfill": "^0.9.6",
-    "fullpage.js": "^3.0.2",
     "markdown": "^0.5.0",
     "markdown-it": "^8.4.1",
     "npm": "^6.1.0",
