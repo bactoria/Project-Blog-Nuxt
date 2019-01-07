@@ -1,8 +1,10 @@
 <template>
-  <div align="center">
+  <div class="root" align="center">
 
-    <div class="category GodoB">CATEGORY</div>
-
+    <div class="category GodoB">BACTORIA</div>
+    <div>
+      <img src="/image/me5.jpg" style="border-radius: 50%"; width="60%"/>
+    </div>
     <category/>
 
     <link-icon style="position: absolute; bottom: 5vh;"/>
@@ -31,13 +33,15 @@
 </script>
 
 <style lang="scss" scoped>
-
+.root{
+  font-size: 1.5em;
+}
   .center {
     text-align: center;
   }
 
   .category {
-    font-size: 2.2em;
+    font-size: 2em;
     text-align: center;
     margin-top: 5vh;
     margin-bottom: 5vh;
