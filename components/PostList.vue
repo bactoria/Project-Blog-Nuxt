@@ -10,10 +10,11 @@
     <a v-for="post in posts" :key="post[0]" class="card" :href="'/post/'+post[0]">
       <div class="GodoB centerPosition">
           {{post[2]}}
-        </div>
-        <div class="GodoM" style="font-size: 0.8em; position: absolute; right: 2%; bottom: 1%;">
-          {{post[3].split("T")[0]}}
-        </div>
+      </div>
+      <div class="GodoM" style="font-size: 0.8em; position: absolute; right: 2%; bottom: 1%;">
+        {{toDate(post[3])}}
+      </div>
+
     </a>
 
   </div>
@@ -26,7 +27,12 @@
   export default {
     computed: mapGetters({
       posts: 'posts'
-    })
+    }),
+    methods: {
+      toDate(s) {
+        return s.split("T")[0].replace ("-","/").replace ("-","/")
+      }
+    }
   }
 
 </script>
