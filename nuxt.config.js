@@ -20,7 +20,7 @@ module.exports = {
     script: [
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/image/me3.jpg' },
+      { rel: 'icon', type: 'image/x-icon', href: '/image/me5.jpg' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }
     ]
   },
