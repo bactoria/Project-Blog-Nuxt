@@ -6,7 +6,7 @@
     </div>
 
     <div>
-      <img src="/image/me5.jpg" style="border-radius: 50%"; width="60%"/>
+      <img src="/image/me5.jpg" style="border-radius: 50%; border: 2px solid #fec7da" width="60%"/>
     </div>
     <category/>
     <search/>
