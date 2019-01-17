@@ -42,5 +42,5 @@ deploy:
     region: ap-northeast-2 # 아시아 태평양(서울)
     wait-until-deployed: true
     on:
-      repo: bactoria/Project-Blog-REST #Github 주소
+      repo: bactoria/Project-Blog-Nuxt #Github 주소
       branch: deploy-test
