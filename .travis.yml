@@ -10,7 +10,9 @@ branches:
   only:
     - deploy-test
 
-script: "npm run build"
+install:
+  - npm install
+  - npm run build
 
 # s3로 알집해서 전송하기
 before_deploy:
