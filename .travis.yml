@@ -13,7 +13,7 @@ branches:
 # s3로 알집해서 전송하기
 before_deploy:
   - npm run build
-  - zip -r myBlog-Front .
+  - zip -r myBlog-Front .nuxt package.json static execute-deploy.sh
   - mkdir -p deploy
   - mv myBlog-Front.zip deploy/myBlog-Front.zip
   
