@@ -104,11 +104,11 @@
         ],
         script: [
           {src: 'https://bactoria.disqus.com/count.js', id: 'dsq-count-scr', body: true},
-          {src: '/js/prism180830.js'},
+          {src: '/js/prism190117.js'},
           {src: '/js/facebookSDK.js'}
         ],
         link: [
-          {rel: 'stylesheet', href: '/css/prism180830.css'},
+          {rel: 'stylesheet', href: '/css/prism190117.css'},
           {rel: 'stylesheet', href: '/css/prism-custom.css'}
         ]
       }

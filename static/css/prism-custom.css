@@ -8,14 +8,14 @@ p img {
 
 /* markdown의 ``의 css*/
 p code {
-  line-height: 1.1;
+  line-height: 1.5;
   color: #666666;
   font-family: GodoM;
 }
 
 /* 해시태그(#) 사이즈 조정 */
 
-  h1 {
+h1 {
   line-height: 2.5em;
   margin-top: 0.7em;
   margin-bottom: 0.7em;
@@ -44,59 +44,12 @@ h4 {
 /* list css에 안맞음 */
 .markdown ol,
 .markdown ul {
-  margin-left:1.2em;
-  margin-top:0.5em;
-  margin-bottom:0.5em;
+  margin-left: 1.2em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 
 }
 
 li {
   line-height: 1.5em;
-}
-
-code[class*="language-"],
-pre[class*="language-"] {
-  box-shadow: none;
-
-  margin-top: 2em;
-}
-
-/*code-toolbar */
-
-div.code-toolbar > .toolbar {
-
-  position: absolute;
-  right: 0em;
-  left: 0em;
-  top: 0em;
-
-  border-top-left-radius: 0.3em;
-  border-top-right-radius: 0.3em;
-
-}
-
-div.code-toolbar:hover > .toolbar {
-  opacity: 0.9; /* 0.9 로 해버려서 밑에 copy의 색깔들에 0.1정도의 검정색 필터를 가져버림. 색조합 다시 짤때 이거 1로 바꾸고 하자*/
-}
-
-
-/* copy hover color*/
-
-div.code-toolbar > .toolbar a:hover,
-div.code-toolbar > .toolbar a:focus {
-  color: red;
-}
-
-
-/* copy
-
-  color : font color
-  background : button color
-*/
-
-div.code-toolbar > .toolbar a,
-div.code-toolbar > .toolbar button,
-div.code-toolbar > .toolbar span {
-  color: #999;
-  background: #DDD;
 }
