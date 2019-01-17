@@ -137,7 +137,7 @@
 <style lang="scss" scoped>
 
   .root {
-    padding: 3% 5% calc(10% + 20em) 5%;
+    padding: 3% 10% calc(10% + 20em) 10%;
     max-width: 100%;
   }
 
