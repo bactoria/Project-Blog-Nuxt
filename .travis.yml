@@ -31,3 +31,16 @@ deploy:
     on:
       repo: bactoria/Project-Blog-Nuxt #Github 주소
       branch: deploy-test
+  - provider: codedeploy
+    access_key_id: $AWS_ACCESS_KEY # Travis repo settings에 설정된 값
+    secret_access_key: $AWS_SECRET_KEY # Travis repo settings에 설정된 값
+    bucket: myblog-s3 # S3 버킷
+    key: myBlog-Front.zip # S3 버킷에 저장된 myBlog.zip 파일을 EC2로 배포
+    bundle_type: zip
+    application: myBlog-codeDeploy # CodeDeploy 어플리케이션 이름
+    deployment_group: myBlog-group # CodeDeploy 배포 그룹
+    region: ap-northeast-2 # 아시아 태평양(서울)
+    wait-until-deployed: true
+    on:
+      repo: bactoria/Project-Blog-REST #Github 주소
+      branch: deploy-test
