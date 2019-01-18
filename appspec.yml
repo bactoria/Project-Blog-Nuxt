@@ -8,4 +8,4 @@ files:
 hooks:
   AfterInstall:
     - location: asd.sh
-      timeout: 180
+      timeout: 300
