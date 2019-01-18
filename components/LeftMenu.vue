@@ -6,7 +6,7 @@
     </div>
 
     <div>
-      <img src="/image/me5.jpg" style="border-radius: 50%; border: 2px solid #fec7da" width="60%"/>
+      <img src="/image/me5.jpg" class="profileImage"/>
     </div>
     <category/>
     <search/>
@@ -42,6 +42,14 @@
       opacity: 1;
     }
 
+  }
+
+  .profileImage{
+    width:11vw;
+    height: 11vw;
+
+    border-radius: 50%;
+    border: 2px solid #fec7da;
   }
 
 </style>
