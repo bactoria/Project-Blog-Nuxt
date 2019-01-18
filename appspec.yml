@@ -5,10 +5,7 @@ os: linux
 files:
   - source:  / #S3 버킷에서 복사할 .zip 위치
     destination: /home/ec2-user/app/front/build/ #붙여넣기 할 위치
-
 hooks:
-  AfterInstall: # 배포가 끝나면 아래 명령어를 실행
-    - location: execute-deploy-front.sh
-      timeout: 180
+  AfterInstall:
     - location: asd.sh
       timeout: 180

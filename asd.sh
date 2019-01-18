@@ -1,2 +1,2 @@
 #!/bin/bash	
-mkdir asd
+/home/ec2-user/app/front/deploy-front.sh &
