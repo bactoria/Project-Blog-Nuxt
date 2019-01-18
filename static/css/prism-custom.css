@@ -1,3 +1,8 @@
+/*s3 이미지 크기 조정*/
+p img {
+  max-width: 80%;
+}
+
 /* markdown의 ``의 css*/
 p code {
   line-height: 1.5;
