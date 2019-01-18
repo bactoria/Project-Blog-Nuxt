@@ -3,7 +3,7 @@
 
     <div class="category GodoB">BACTORIA</div>
     <div>
-      <img src="/image/me5.jpg" style="border-radius: 50%"; width="60%"/>
+      <img src="/image/me5.jpg" class="profileImage"/>
     </div>
     <category/>
 
@@ -33,9 +33,10 @@
 </script>
 
 <style lang="scss" scoped>
-.root{
-  font-size: 1.5em;
-}
+  .root {
+    font-size: 1.5em;
+  }
+
   .center {
     text-align: center;
   }
@@ -45,6 +46,13 @@
     text-align: center;
     margin-top: 5vh;
     margin-bottom: 5vh;
+  }
+
+  .profileImage {
+    width: 60%;
+
+    border-radius: 50%;
+    border: 2px solid #fec7da;
   }
 
 </style>
