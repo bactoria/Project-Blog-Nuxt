@@ -7,7 +7,7 @@ files:
     destination: /home/ec2-user/app/front/build/ #붙여넣기 할 위치
 hooks:
   BeforeInstall:
-    - location: before-deploy.sh
+    - location: /home/ec2-user/app/front/before-deploy.sh
       timeout: 180
       runas: root
   AfterInstall:
