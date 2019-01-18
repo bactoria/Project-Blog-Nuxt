@@ -1,0 +1,49 @@
+language: node_js
+node_js:
+  - "8"
+
+cache:
+  directories:
+    - "node_modules"
+
+# 테스트 대신 skipping tests 출력
+script:
+  - echo "skipping tests"
+  - npm run build
+
+branches:
+  only:
+    - master
+
+# s3로 알집해서 전송하기
+before_deploy:
+  - zip -r myBlog-Front .nuxt package.json static before-deploy.sh after-deploy.sh appspec.yml
+  - mkdir -p deploy
+  - mv myBlog-Front.zip deploy/myBlog-Front.zip
+  
+deploy:
+  - provider: s3
+    access_key_id: $AWS_ACCESS_KEY # Travis repo settings에 설정된 값
+    secret_access_key: $AWS_SECRET_KEY # Travis repo settings에 설정된 값
+    bucket: myblog-s3 # S3 버킷
+    region: ap-northeast-2 # 아시아 태평양 (서울)
+    skip_cleanup: true
+    acl: public_read
+    local_dir: deploy #zip만 추가하기 위해 s3에 넣을 dir을 deploy 폴더로 지정한다.
+    wait-until-deployed: true
+    on:
+      repo: bactoria/Project-Blog-Nuxt #Github 주소
+      branch: master
+  - provider: codedeploy
+    access_key_id: $AWS_ACCESS_KEY # Travis repo settings에 설정된 값
+    secret_access_key: $AWS_SECRET_KEY # Travis repo settings에 설정된 값
+    bucket: myblog-s3 # S3 버킷
+    key: myBlog-Front.zip # S3 버킷에 저장된 myBlog.zip 파일을 EC2로 배포
+    bundle_type: zip
+    application: myBlog-codeDeploy # CodeDeploy 어플리케이션 이름
+    deployment_group: myBlog-group # CodeDeploy 배포 그룹
+    region: ap-northeast-2 # 아시아 태평양(서울)
+    wait-until-deployed: true
+    on:
+      repo: bactoria/Project-Blog-Nuxt #Github 주소
+      branch: master
