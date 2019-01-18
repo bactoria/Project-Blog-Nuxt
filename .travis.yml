@@ -6,6 +6,10 @@ cache:
   directories:
     - "node_modules"
 
+# 테스트 대신 skipping tests 출력
+script:
+- echo "skipping tests"
+
 branches:
   only:
     - deploy-test
