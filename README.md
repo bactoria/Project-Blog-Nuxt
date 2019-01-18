@@ -1,4 +1,4 @@
-# FrontEnd - [Bactoria.me](https://bactoria.me)
+# FrontEnd - [Bactoria.me](https://bactoria.me) [![Build Status](https://travis-ci.org/bactoria/Project-Blog-Nuxt.svg?branch=master)](https://travis-ci.org/bactoria/Project-Blog-Nuxt)
 
 ![](assets/main.png)
 
