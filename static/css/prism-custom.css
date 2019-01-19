@@ -3,6 +3,11 @@ p img {
   max-width: 80%;
 }
 
+p a {
+  color: #FF7F50 !important;
+  font-weight: bold;
+}
+
 /* markdown의 ``의 css*/
 p code {
   line-height: 1.5;
