@@ -68,7 +68,7 @@
 
 <script>
   import VueMarkdown from 'vue-markdown'
-  import { mapGetters } from 'vuex'
+  import {mapGetters} from 'vuex'
 
 
   export default {
@@ -93,14 +93,14 @@
     head() {
       return {
 
-        title: '['+ this.post.category.name + '] ' + this.post.title + ' :: Bactoria',
+        title: '[' + this.post.category.name + '] ' + this.post.title + ' :: Bactoria',
         meta: [
-          { hid: 'description', name: 'description', content: this.post.content },
-          { property: 'og:type', content:'website'},
-          { property: 'og:title', content:this.post.title},
-          { property: 'og:description', content:this.post.content},
-          { property: 'og:image', content:'https://avatars0.githubusercontent.com/u/25674959?s=460&v=4'},
-          { property: 'og:url', content:'https://bactoria.me/post/'+this.$route.params.id}
+          {hid: 'description', name: 'description', content: this.post.content},
+          {property: 'og:type', content: 'website'},
+          {property: 'og:title', content: this.post.title},
+          {property: 'og:description', content: this.post.content},
+          {property: 'og:image', content: 'https://avatars0.githubusercontent.com/u/25674959?s=460&v=4'},
+          {property: 'og:url', content: 'https://bactoria.me/post/' + this.$route.params.id}
         ],
         script: [
           {src: 'https://bactoria.disqus.com/count.js', id: 'dsq-count-scr', body: true},
@@ -127,8 +127,8 @@
     },
     middleware: 'post',
     components: {VueMarkdown},
-    computed : mapGetters({
-      post : 'post'
+    computed: mapGetters({
+      post: 'post'
     })
   }
 </script>
@@ -159,13 +159,11 @@
 
   .markdown {
     max-width: 100%;
-    font-size: 1.3em;
     text-align: left;
     line-height: 2.5em;
 
     //text가 div 벗어나는거 방지
     word-wrap: break-word;
-
 
     padding-left: 1%;
     padding-right: 1%;
@@ -178,8 +176,6 @@
   #disqust_thread {
     margin-top: 20px;
   }
-
-
 
   //https://vuetifyjs.com/ko/layout/breakpoints 의 규격에 맞춤.
   $breakpoints: (
@@ -215,6 +211,19 @@
     }
     @include respond-to('xs') {
       font-size: 0.5em;
+    }
+  }
+
+  .markdown {
+
+    @include respond-to('md') {
+      font-size: 1.1em;
+    }
+    @include respond-to('sm') {
+      font-size: 1.2em;
+    }
+    @include respond-to('xs') {
+      font-size: 1.3em;
     }
   }
 
