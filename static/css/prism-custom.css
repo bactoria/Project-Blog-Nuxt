@@ -6,6 +6,7 @@ blockquote {
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
 }
+
 blockquote:before {
   color: #ccc;
   content: "\201C";
@@ -18,23 +19,30 @@ blockquote p {
   display: inline;
 }
 
+/* **strong** */
+strong {
+  border-bottom: 3px solid #b4e7f8; /*밑줄색깔*/
+}
+
+/* `` */
+p code {
+  line-height: 1.8;
+  border: 2px solid #f92672;
+  color: #000000;
+  font-family: GodoM;
+}
 
 /*s3 이미지 크기 조정*/
 p img {
   max-width: 80%;
 }
 
+/* Link */
 p a {
   color: #FF7F50 !important;
   font-weight: bold;
 }
 
-/* markdown의 ``의 css*/
-p code {
-  line-height: 1.5;
-  color: #666666;
-  font-family: GodoM;
-}
 
 /* 해시태그(#) 사이즈 조정 */
 
