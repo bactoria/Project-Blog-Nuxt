@@ -3,6 +3,12 @@ pre[class*="language-"] {
   font-size: 1.2em;
 }
 
+/*vuetify의 effect 제거*/
+code:before {
+  content: "" !important;
+  letter-spacing: 0px !important;
+}
+
 /*> 구문*/
 blockquote {
   background: #f9f9f9;
