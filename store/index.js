@@ -4,21 +4,9 @@
 * */
 
 import Vuex from 'vuex'
-import getters from './getters.js'
-import mutations from './mutations.js'
-
-const state = {
-  posts: [],
-  categories: [],
-  hasCategories: false,
-  post: [],
-  csr: [],
-  searchedPosts: [],
-  authenticated: false,
-  counter: 0,
-  tokenStr: '',
-  markContent: 'markContent'
-}
+import getters from './getters'
+import mutations from './mutations'
+import state from './state'
 
 const store = () => {
   return new Vuex.Store({
