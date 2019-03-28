@@ -1,7 +1,7 @@
 <template>
   <div align="center" class="root" style="position: absolute; top:5vh; width: 100%;">
 
-      <span class="GodoB" style="font-size: 2em; color: #2ac1bc;">전체 글</span>
+      <span class="GodoB" style="font-size: 2em; color: #FF7F50;">전체 글</span>
     <div style="border-bottom: 0.2em solid #dddddd;border-radius: 2px; width: 60%; margin: 2vh 0 4vh 0;"></div>
     <post-list />
 

@@ -2,11 +2,11 @@
 
   <div class="root">
 
-    <div class="table" align="center">
+    <div align="center">
 
       <!-- 카테고리 -->
       <div align="center">
-        <a class="GodoB" style="font-size: 1.5em; text-decoration: none; color: #2ac1bc;"
+        <a class="GodoB" style="font-size: 1.5em; text-decoration: none; color: #FF7F50;"
            :href="'/category/'+post.category.id">{{post.category.name}}</a>
       </div>
 

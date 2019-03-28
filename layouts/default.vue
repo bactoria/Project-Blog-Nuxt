@@ -1,6 +1,6 @@
 <template>
 
-  <v-app style="background: white;">
+  <v-app style="background: ghostwhite;">
 
     <!--Toolbar-->
     <v-toolbar app class="hidden-md-and-up white" flat style="position: fixed; top:0vh; opacity: 0.6 ">

@@ -38,9 +38,10 @@ strong {
 /* `` */
 p code {
   line-height: 1.8;
-  border: 2px solid #f92672;
   color: #000000;
   font-family: GodoM;
+  border-radius: 0.1em;
+
 }
 
 /*s3 이미지 크기 조정*/

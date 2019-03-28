@@ -46,7 +46,7 @@
   $mobile-size: 959px;
 
   .root {
-    width: 50%;
+    width: 60%;
   }
 
   .card {
@@ -54,11 +54,8 @@
     margin: 15px;
 
     height: 12vh;
-
+    background-color: navajowhite;
     transition: .15s all ease-in-out;
-
-    background-image: url("/static/image/backboard.jpg");
-    background-repeat: repeat;
 
     &:hover {
       transform: scale(1.07);
@@ -82,12 +79,11 @@
 
     .sub-title {
       width: 100%;
-      font-size: 1.1em;
       position: relative;
       top: 40%;
       left: 50%;
       transform: translate(-50%, -50%);
-      color: darkgrey;
+      color: #fd971f;
     }
   }
 
