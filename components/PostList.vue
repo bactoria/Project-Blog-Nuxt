@@ -4,15 +4,19 @@
     [0] : id
     [1] : categoryId
     [2] : title
-    [3] : createdDate
+    [3] : subTitle
+    [4] : createdDate
     -->
 
     <a v-for="post in posts" :key="post[0]" class="card" :href="'/post/'+post[0]">
-      <div class="GodoB centerPosition">
+      <div class="GodoB title">
           {{post[2]}}
       </div>
+      <div class="GodoM sub-title">
+        {{post[3]}}
+      </div>
       <div class="GodoM" style="font-size: 0.8em; position: absolute; right: 2%; bottom: 1%;">
-        {{toDate(post[3])}}
+        {{toDate(post[4])}}
       </div>
 
     </a>
@@ -67,13 +71,23 @@
 
     }
 
-    .centerPosition {
+    .title {
       width: 100%;
       font-size: 1.4em;
-      position: absolute;
-      top: 50%;
+      position: relative;
+      top: 35%;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+
+    .sub-title {
+      width: 100%;
+      font-size: 1.1em;
+      position: relative;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: darkgrey;
     }
   }
 
