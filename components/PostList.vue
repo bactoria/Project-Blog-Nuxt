@@ -1,26 +1,16 @@
 <template>
   <div class="root">
-    <!-- post
-    [0] : id
-    [1] : categoryId
-    [2] : title
-    [3] : subTitle
-    [4] : createdDate
-    -->
-
-    <a v-for="post in posts" :key="post[0]" class="card" :href="'/post/'+post[0]">
+    <a v-for="post in posts" :key="post.id" class="card" :href="'/post/'+post.id">
       <div class="GodoB title">
-          {{post[2]}}
+        {{post.title}}
       </div>
       <div class="GodoM sub-title">
-        {{post[3]}}
+        {{post.subTitle}}
       </div>
       <div class="GodoM" style="font-size: 0.8em; position: absolute; right: 2%; bottom: 1%;">
-        {{toDate(post[4])}}
+        {{toDate(post.createdDate)}}
       </div>
-
     </a>
-
   </div>
 
 </template>
