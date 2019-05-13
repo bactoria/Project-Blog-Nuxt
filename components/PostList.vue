@@ -34,7 +34,7 @@
     }),
     methods: {
       toDate(s) {
-        return s.split("T")[0].replace ("-","/").replace ("-","/")
+        return s.split("T")[0].replace("-", "/").replace("-", "/")
       }
     }
   }
