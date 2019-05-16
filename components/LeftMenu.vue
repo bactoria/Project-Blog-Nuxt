@@ -26,7 +26,6 @@
 
 <style lang="scss" scoped>
   .root {
-    height: 100%;
     background-color: #f92672;
     font-size: 1.3vw;
   }
