@@ -6,7 +6,7 @@
       <img src="/image/me5.jpg" class="profileImage"/>
     </div>
     <category/>
-    <link-icon style="position: absolute; bottom: 5vh;"/>
+    <link-icon style="position: absolute; bottom: 2vh;"/>
   </div>
 
 </template>
