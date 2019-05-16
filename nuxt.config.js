@@ -58,6 +58,7 @@ module.exports = {
   },
   plugins: [
     '@/plugins/vuetify',
+    '~/plugins/eventBus.js',
     { src: '~plugins/ga.js', ssr: false }
   ],
 
