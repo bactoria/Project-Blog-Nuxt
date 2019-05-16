@@ -1,5 +1,5 @@
 <template>
-  <div class="root" align="center">
+  <div class="hidden-sm-and-down root" align="center">
 
     <div style="padding: 1.5em 0 1em 0;">
       <a href="/" tag="span" class="bactoria GodoB" align="center">Bactoria</a>
