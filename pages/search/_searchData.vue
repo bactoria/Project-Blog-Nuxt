@@ -1,5 +1,5 @@
 <template>
-  <div class="root" align="center">
+  <div align="center">
 
     <!-- post
   [0] : id
@@ -44,11 +44,6 @@
 </script>
 
 <style lang="scss" scoped>
-
-  .root {
-    margin-left: 7%;
-    margin-right: 7%;
-  }
 
   .card {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 6px, rgba(0, 0, 0, 0.3) 0px 1px 4px;
