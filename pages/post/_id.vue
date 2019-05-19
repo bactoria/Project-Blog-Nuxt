@@ -31,7 +31,7 @@
     <article>
       <!-- 내용 -->
 
-      <vue-markdown style="text-align: left;" class="GodoM markdown"
+      <vue-markdown style="text-align: left;" class="markdown"
                     :watches="['show','html','breaks','linkify','emoji','typographer','toc']"
                     :source="post.content" :show="show" :html="html" :breaks="breaks" :linkify="linkify"
                     :emoji="emoji" :typographer="typographer"></vue-markdown>
@@ -160,7 +160,7 @@
   .markdown {
     max-width: 100%;
     text-align: left;
-    line-height: 2.5em;
+    line-height: 2em;
 
     //text가 div 벗어나는거 방지
     word-wrap: break-word;
